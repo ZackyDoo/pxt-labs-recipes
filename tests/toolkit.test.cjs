@@ -7,7 +7,7 @@ function runtime(){
   game:{currentScene:()=>scene},tiles:{getTileLocation:(x,y)=>({x,y}),tileAtLocationIsWall:p=>walls.has(p.x+','+p.y)},
   LabsFacing:{Up:0,Down:1,Left:2,Right:3},labs:{facing:s=>s.facing===undefined?3:s.facing}});
  vm.runInContext('Array.prototype.removeAt=function(i){this.splice(i,1)}',context);
- vm.runInContext(ts.transpileModule(fs.readFileSync(path.join(__dirname,'../toolkit.ts'),'utf8'),{compilerOptions:{target:ts.ScriptTarget.ES2017}}).outputText,context);
+ vm.runInContext(ts.transpileModule(fs.readFileSync(path.join(__dirname,'../libs/inventory/inventory.ts'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'../toolkit.ts'),'utf8'),{compilerOptions:{target:ts.ScriptTarget.ES2017}}).outputText,context);
  return {...context,saved,walls,scene};
 }
 test('inventory additions are atomic, stack by name, free slots on removal, and isolate bags',()=>{

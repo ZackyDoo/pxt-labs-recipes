@@ -1,0 +1,267 @@
+[
+  {
+    "id": "arcade-sprite-data",
+    "repo": "microsoft/arcade-sprite-data",
+    "default": true,
+    "category": "sprites",
+    "group": "Data",
+    "description": "Remember numbers, text, pictures and other information on each sprite."
+  },
+  {
+    "id": "arcade-timers",
+    "repo": "microsoft/arcade-timers",
+    "default": true,
+    "category": "game",
+    "group": "Timers",
+    "description": "Schedule actions, wait for repeated input to settle, and limit how often actions happen."
+  },
+  {
+    "id": "arcade-text",
+    "repo": "microsoft/arcade-text",
+    "default": true,
+    "category": "sprites",
+    "group": "Text",
+    "description": "Make labels that behave like sprites, with borders, outlines and icons."
+  },
+  {
+    "id": "arcade-tile-util",
+    "repo": "microsoft/arcade-tile-util",
+    "default": true,
+    "category": "scene",
+    "group": "Tilemaps",
+    "description": "Copy, inspect and transform maps, swap tiles, and connect rooms."
+  },
+  {
+    "id": "arcade-character-animations",
+    "repo": "microsoft/arcade-character-animations",
+    "default": true,
+    "category": "animation",
+    "group": "Character",
+    "description": "Choose walking, facing and jumping animations automatically from simple rules."
+  },
+  {
+    "id": "arcade-tilemap-a-star",
+    "repo": "jwunderl/arcade-tilemap-a-star",
+    "category": "scene",
+    "group": "Pathfinding",
+    "description": "Find routes around walls and send characters along them.",
+    "default": true
+  },
+  {
+    "id": "arcade-background-scroll",
+    "repo": "microsoft/arcade-background-scroll",
+    "category": "scene",
+    "group": "Parallax",
+    "description": "Scroll background layers at different speeds for depth.",
+    "default": true
+  },
+  {
+    "id": "pxt-settings-blocks",
+    "repo": "microsoft/pxt-settings-blocks",
+    "category": "game",
+    "group": "Save data",
+    "description": "Save progress on this browser or device and read it next time.",
+    "default": true
+  },
+  {
+    "id": "pxt-button-combos",
+    "repo": "jwunderl/pxt-button-combos",
+    "category": "controller",
+    "group": "Combos",
+    "description": "Recognize sequences of button presses for special moves or rhythm games.",
+    "default": true
+  },
+  {
+    "id": "arcade-grid",
+    "repo": "microsoft/arcade-grid",
+    "category": "scene",
+    "group": "Grid",
+    "description": "Move pieces between grid cells and find which sprites occupy a cell.",
+    "default": true
+  },
+  {
+    "id": "arcade-mini-menu",
+    "repo": "riknoll/arcade-mini-menu",
+    "description": "Create selectable menus, grids of items, icons and scrolling choices.",
+    "default": true
+  },
+  {
+    "id": "arcade-story",
+    "repo": "microsoft/arcade-storytelling",
+    "description": "Build dialogue, player choices and cutscenes with coordinated character movement.",
+    "default": true
+  },
+  {
+    "id": "arcade-block-objects",
+    "repo": "microsoft/arcade-block-objects",
+    "description": "Group related game information in reusable objects.",
+    "default": true
+  },
+  {
+    "id": "pxt-color",
+    "repo": "jwunderl/pxt-color",
+    "category": "scene",
+    "group": "Palette effects",
+    "description": "Fade between palettes and change game colors over time.",
+    "default": true
+  },
+  {
+    "id": "pxt-lantern",
+    "repo": "felixtsu/pxt-lantern",
+    "category": "scene",
+    "group": "Lighting",
+    "description": "Darken a room and attach moving lights to characters.",
+    "default": true
+  },
+  {
+    "id": "arcade-split-screen",
+    "repo": "riknoll/arcade-split-screen",
+    "category": "scene",
+    "group": "Split screen",
+    "description": "Give local players separate camera views in the same game.",
+    "default": true
+  },
+  {
+    "id": "arcade-extension-utils",
+    "repo": "riknoll/arcade-extension-utils",
+    "hidden": true,
+    "description": "Shared support for screen effects and split-screen.",
+    "default": true
+  },
+  {
+    "id": "extra-effects",
+    "repo": "alexszeto/extra-effects",
+    "description": "Design particle bursts, trails and effects with custom shapes and colors.",
+    "default": true
+  },
+  {
+    "id": "arcade-screen-transitions",
+    "repo": "riknoll/arcade-screen-transitions",
+    "category": "scene",
+    "group": "Transitions",
+    "description": "Reveal a new scene with wipes, shapes and screen transitions.",
+    "default": true
+  },
+  {
+    "id": "pxt-arcade-mazes",
+    "repo": "robo-technical-group/pxt-arcade-mazes",
+    "category": "scene",
+    "group": "Mazes",
+    "description": "Generate connected random mazes and inspect their passages.",
+    "default": true
+  },
+  {
+    "id": "arcade-sprite-events",
+    "repo": "riknoll/arcade-sprite-events",
+    "category": "sprites",
+    "group": "Events",
+    "description": "React when sprites enter or leave overlaps, walls and screen boundaries.",
+    "default": true
+  },
+  {
+    "id": "arcade-camera-offset",
+    "repo": "riknoll/arcade-camera-offset",
+    "category": "scene",
+    "group": "Camera",
+    "description": "Follow a character while looking ahead or keeping space for the HUD.",
+    "default": true
+  },
+  {
+    "id": "arcade-custom-instruments",
+    "repo": "riknoll/arcade-custom-instruments",
+    "category": "music",
+    "group": "Instruments",
+    "description": "Build instruments and drum sounds for Arcade songs.",
+    "default": true
+  },
+  {
+    "id": "pxt-sound-effects",
+    "repo": "klausw3/pxt-sound-effects",
+    "category": "music",
+    "group": "Synthesizer",
+    "description": "Create layered retro sound effects with detailed envelopes and wave shapes.",
+    "default": true
+  },
+  {
+    "id": "pxt-rtttl",
+    "repo": "pelikhan/pxt-rtttl",
+    "category": "music",
+    "group": "Ringtones",
+    "description": "Play a tune stored as compact ringtone text.",
+    "default": true
+  },
+  {
+    "id": "arcade-overworld",
+    "repo": "riknoll/arcade-overworld",
+    "category": "scene",
+    "group": "Overworld",
+    "description": "Organize many maps into a world, move through exits and keep room state.",
+    "default": true
+  },
+  {
+    "id": "pxt-status-bar",
+    "repo": "jwunderl/pxt-status-bar",
+    "category": "sprites",
+    "group": "Status bars",
+    "description": "Attach health, energy and progress bars to individual characters and react to thresholds.",
+    "default": true
+  },
+  {
+    "id": "arcade-state-transitions",
+    "repo": "riknoll/arcade-state-transitions",
+    "category": "game",
+    "group": "States",
+    "description": "Organize game modes and enemy AI with named states, entry events and automatic timed transitions.",
+    "default": true
+  },
+  {
+    "id": "arcade-tile-scanner",
+    "repo": "riknoll/arcade-tile-scanner",
+    "category": "scene",
+    "group": "Tile rules",
+    "description": "Find connected areas, borders and lines of matching tiles and change them as a group.",
+    "default": true
+  },
+  {
+    "id": "arcade-shadowcasting",
+    "repo": "riknoll/arcade-shadowcasting",
+    "category": "scene",
+    "group": "Shadows",
+    "description": "Hide parts of a map that are behind walls from a chosen character.",
+    "default": true
+  },
+  {
+    "id": "arcade-sprite-util",
+    "repo": "jwunderl/arcade-sprite-util",
+    "category": "sprites",
+    "group": "Spatial tools",
+    "description": "Measure sprite distances and headings, find nearby actors and place or move sprites at an angle.",
+    "expose": [
+      "isDestroyed",
+      "distanceBetween",
+      "heading",
+      "speed",
+      "getSpritesWithin",
+      "angleFrom",
+      "placeAngleFrom",
+      "setVelocityAtAngle",
+      "onSpriteUpdateInterval",
+      "onSpriteKindUpdateInterval",
+      "radiansToDegrees",
+      "degreesToRadians",
+      "roundWithPrecision",
+      "jumpImpulse",
+      "point"
+    ],
+    "default": true
+  },
+  {
+    "id": "pxt-raycasting",
+    "repo": "AqeeAqee/pxt-raycasting",
+    "description": "Use an explicit render-mode block to explore a tilemap in first-person 2.5D, with directional sprites.",
+    "default": true,
+    "hide": [
+      "getRenderSpriteInstance"
+    ]
+  }
+]

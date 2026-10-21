@@ -1,0 +1,16 @@
+{
+  "name": "labs-inventory",
+  "version": "0.4.0",
+  "description": "Shared Labs inventory data and blocks",
+  "license": "MIT",
+  "dependencies": {
+    "device": "*"
+  },
+  "files": [
+    "inventory.ts"
+  ],
+  "supportedTargets": [
+    "arcade"
+  ],
+  "public": true
+}

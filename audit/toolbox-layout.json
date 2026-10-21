@@ -1,0 +1,3192 @@
+[
+  {
+    "qName": "scroller.scrollBackgroundWithCamera",
+    "id": "scroller_scrollBackgroundWithCamera",
+    "category": "scene",
+    "group": "Parallax",
+    "hidden": false
+  },
+  {
+    "qName": "scroller.scrollBackgroundWithSpeed",
+    "id": "scroller_scrollBackgroundWithSpeed",
+    "category": "scene",
+    "group": "Parallax",
+    "hidden": false
+  },
+  {
+    "qName": "scroller.setCameraScrollingMultipliers",
+    "id": "scroller_setCameraScrollingMultipliers",
+    "category": "scene",
+    "group": "Parallax",
+    "hidden": false
+  },
+  {
+    "qName": "scroller.setBackgroundScrollOffset",
+    "id": "scroller_setBackgroundScrollOffset",
+    "category": "scene",
+    "group": "Parallax",
+    "hidden": false
+  },
+  {
+    "qName": "scroller.getBackgroundXOffset",
+    "id": "scroller_getBackgroundXOffset",
+    "category": "scene",
+    "group": "Parallax",
+    "hidden": false
+  },
+  {
+    "qName": "scroller.getBackgroundYOffset",
+    "id": "scroller_getBackgroundYOffset",
+    "category": "scene",
+    "group": "Parallax",
+    "hidden": false
+  },
+  {
+    "qName": "scroller.setLayerImage",
+    "id": "scroller_setLayerImage",
+    "category": "scene",
+    "group": "Parallax",
+    "hidden": false
+  },
+  {
+    "qName": "scroller.setLayerZIndex",
+    "id": "scroller_setLayerZIndex",
+    "category": "scene",
+    "group": "Parallax",
+    "hidden": false
+  },
+  {
+    "qName": "scroller._backgroundLayer",
+    "id": "scroller_backgroundLayer",
+    "category": "scene",
+    "group": "Parallax",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.create",
+    "id": "blockObject_create",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.storeOnSprite",
+    "id": "blockObject_storeOnSprite",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.getStoredObject",
+    "id": "blockObject_getFromSprite",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject._numProperty",
+    "id": "blockObject_numberProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.getNumberProperty",
+    "id": "blockObject_get_numberProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.hasNumberProperty",
+    "id": "blockObject_has_numberProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.setNumberProperty",
+    "id": "blockObject_set_numberProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject._numArrayProperty",
+    "id": "blockObject_numberArrayProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.getNumberArrayProperty",
+    "id": "blockObject_get_numberArrayProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.hasNumberArrayProperty",
+    "id": "blockObject_has_numberArrayProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.setNumberArrayProperty",
+    "id": "blockObject_set_numberArrayProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject._boolProperty",
+    "id": "blockObject_booleanProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.getBooleanProperty",
+    "id": "blockObject_get_booleanProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.hasBooleanProperty",
+    "id": "blockObject_has_booleanProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.setBooleanProperty",
+    "id": "blockObject_set_booleanProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject._boolArrayProperty",
+    "id": "blockObject_booleanArrayProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.getBooleanArrayProperty",
+    "id": "blockObject_get_booleanArrayProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.hasBooleanArrayProperty",
+    "id": "blockObject_has_booleanArrayProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.setBooleanArrayProperty",
+    "id": "blockObject_set_booleanArrayProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject._strProperty",
+    "id": "blockObject_stringProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.getStringProperty",
+    "id": "blockObject_get_stringProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.hasStringProperty",
+    "id": "blockObject_has_stringProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.setStringProperty",
+    "id": "blockObject_set_stringProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject._strArrayProperty",
+    "id": "blockObject_stringArrayProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.getStringArrayProperty",
+    "id": "blockObject_get_stringArrayProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.hasStringArrayProperty",
+    "id": "blockObject_has_stringArrayProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.setStringArrayProperty",
+    "id": "blockObject_set_stringArrayProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject._spriteProperty",
+    "id": "blockObject_spriteProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.getSpriteProperty",
+    "id": "blockObject_get_spriteProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.hasSpriteProperty",
+    "id": "blockObject_has_spriteProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.setSpriteProperty",
+    "id": "blockObject_set_spriteProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject._spriteArrayProperty",
+    "id": "blockObject_spriteArrayProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.getSpriteArrayProperty",
+    "id": "blockObject_get_spriteArrayProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.hasSpriteArrayProperty",
+    "id": "blockObject_has_spriteArrayProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.setSpriteArrayProperty",
+    "id": "blockObject_set_spriteArrayProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject._imageProperty",
+    "id": "blockObject_imageProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.getImageProperty",
+    "id": "blockObject_get_imageProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.hasImageProperty",
+    "id": "blockObject_has_imageProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.setImageProperty",
+    "id": "blockObject_set_imageProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject._imageArrayProperty",
+    "id": "blockObject_imageArrayProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.getImageArrayProperty",
+    "id": "blockObject_get_imageArrayProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.hasImageArrayProperty",
+    "id": "blockObject_has_imageArrayProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.setImageArrayProperty",
+    "id": "blockObject_set_imageArrayProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject._locProperty",
+    "id": "blockObject_locationProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.getLocationProperty",
+    "id": "blockObject_get_locationProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.hasLocationProperty",
+    "id": "blockObject_has_locationProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.setLocationProperty",
+    "id": "blockObject_set_locationProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject._locArrayProperty",
+    "id": "blockObject_locationArrayProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.getLocationArrayProperty",
+    "id": "blockObject_get_locationArrayProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.hasLocationArrayProperty",
+    "id": "blockObject_has_locationArrayProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.setLocationArrayProperty",
+    "id": "blockObject_set_locationArrayProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject._anyProperty",
+    "id": "blockObject_anyProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.getAnyProperty",
+    "id": "blockObject_get_anyProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.hasAnyProperty",
+    "id": "blockObject_has_anyProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "blockObject.setAnyProperty",
+    "id": "blockObject_set_anyProp",
+    "category": "blockObject",
+    "hidden": false
+  },
+  {
+    "qName": "cameraOffsetScene.cameraFollowWithOffset",
+    "id": "riknoll_camera_follow_with_offset",
+    "category": "scene",
+    "group": "Camera",
+    "hidden": false
+  },
+  {
+    "qName": "characterAnimations.loopFrames",
+    "id": "arcade_character_loop_frames",
+    "category": "animation",
+    "group": "Character",
+    "hidden": false
+  },
+  {
+    "qName": "characterAnimations.runFrames",
+    "id": "arcade_character_run_frames",
+    "category": "animation",
+    "group": "Character",
+    "hidden": false
+  },
+  {
+    "qName": "characterAnimations.matchesRule",
+    "id": "arcade_character_is_facing",
+    "category": "animation",
+    "group": "Character",
+    "hidden": false
+  },
+  {
+    "qName": "characterAnimations.setCharacterAnimationsEnabled",
+    "id": "arcade_character_animation_enabled",
+    "category": "animation",
+    "group": "Character",
+    "hidden": false
+  },
+  {
+    "qName": "characterAnimations.setCharacterState",
+    "id": "arcade_character_animation_set_state",
+    "category": "animation",
+    "group": "Character",
+    "hidden": false
+  },
+  {
+    "qName": "characterAnimations.clearCharacterState",
+    "id": "arcade_character_animation_clear_state",
+    "category": "animation",
+    "group": "Character",
+    "hidden": false
+  },
+  {
+    "qName": "characterAnimations.setController",
+    "id": "arcade_character_animation_set_controller",
+    "category": "animation",
+    "group": "Character",
+    "hidden": false
+  },
+  {
+    "qName": "characterAnimations.lockFacingDirection",
+    "id": "arcade_character_animation_lock_facing_direction",
+    "category": "animation",
+    "group": "Character",
+    "hidden": false
+  },
+  {
+    "qName": "characterAnimations.unlockFacingDirection",
+    "id": "arcade_character_animation_unlock_facing_direction",
+    "category": "animation",
+    "group": "Character",
+    "hidden": false
+  },
+  {
+    "qName": "characterAnimations.rule",
+    "id": "arcade_character_make_rule",
+    "category": "animation",
+    "group": "Character",
+    "hidden": false
+  },
+  {
+    "qName": "characterAnimations._animationFrames",
+    "id": "arcade_character_animation_editor",
+    "category": "animation",
+    "group": "Character",
+    "hidden": true
+  },
+  {
+    "qName": "characterAnimations._predicate",
+    "id": "arcade_character_predicate",
+    "category": "animation",
+    "group": "Character",
+    "hidden": false
+  },
+  {
+    "qName": "characterAnimations._direction",
+    "id": "arcade_character_facing_direction",
+    "category": "animation",
+    "group": "Character",
+    "hidden": false
+  },
+  {
+    "qName": "customInstruments.makeSongWritable",
+    "id": "custom_instrument_makeSongWritable",
+    "category": "music",
+    "group": "Instruments",
+    "hidden": false
+  },
+  {
+    "qName": "customInstruments.setTrackParameter",
+    "id": "custom_instrument_setTrackParameter",
+    "category": "music",
+    "group": "Instruments",
+    "hidden": true
+  },
+  {
+    "qName": "customInstruments.setWaveform",
+    "id": "custom_instrument_setWaveform",
+    "category": "music",
+    "group": "Instruments",
+    "hidden": false
+  },
+  {
+    "qName": "customInstruments.setOctave",
+    "id": "custom_instrument_setOctave",
+    "category": "music",
+    "group": "Instruments",
+    "hidden": false
+  },
+  {
+    "qName": "customInstruments.setVolume",
+    "id": "custom_instrument_setVolume",
+    "category": "music",
+    "group": "Instruments",
+    "hidden": false
+  },
+  {
+    "qName": "customInstruments.setAmpEnvelopeTime",
+    "id": "custom_instrument_setAmpEnvelopeTime",
+    "category": "music",
+    "group": "Instruments",
+    "hidden": false
+  },
+  {
+    "qName": "customInstruments.setAmpEnvelopeSustain",
+    "id": "custom_instrument_setAmpEnvelopeSustain",
+    "category": "music",
+    "group": "Instruments",
+    "hidden": false
+  },
+  {
+    "qName": "customInstruments.setTremolo",
+    "id": "custom_instruments_setTremolo",
+    "category": "music",
+    "group": "Instruments",
+    "hidden": false
+  },
+  {
+    "qName": "customInstruments.setPitchEnvelopeAmount",
+    "id": "custom_instrument_setPitchEnvelopeAmount",
+    "category": "music",
+    "group": "Instruments",
+    "hidden": false
+  },
+  {
+    "qName": "customInstruments.setPitchEnvelopeTime",
+    "id": "custom_instrument_setPitchEnvelopeTime",
+    "category": "music",
+    "group": "Instruments",
+    "hidden": false
+  },
+  {
+    "qName": "customInstruments.setPitchEnvelopeSustain",
+    "id": "custom_instrument_setPitchEnvelopeSustain",
+    "category": "music",
+    "group": "Instruments",
+    "hidden": false
+  },
+  {
+    "qName": "customInstruments.setVibrato",
+    "id": "custom_instruments_setVibrato",
+    "category": "music",
+    "group": "Instruments",
+    "hidden": false
+  },
+  {
+    "qName": "customInstruments._instrumentId",
+    "id": "custom_instrument__instrumentId",
+    "category": "music",
+    "group": "Instruments",
+    "hidden": false
+  },
+  {
+    "qName": "grid.numColumns",
+    "id": "grid_numColumns",
+    "category": "scene",
+    "group": "Grid",
+    "hidden": false
+  },
+  {
+    "qName": "grid.numRows",
+    "id": "grid_numRows",
+    "category": "scene",
+    "group": "Grid",
+    "hidden": false
+  },
+  {
+    "qName": "grid.place",
+    "id": "grid_place",
+    "category": "scene",
+    "group": "Grid",
+    "hidden": false
+  },
+  {
+    "qName": "grid.getLocation",
+    "id": "grid_getLocation",
+    "category": "scene",
+    "group": "Grid",
+    "hidden": false
+  },
+  {
+    "qName": "grid.add",
+    "id": "grid_add",
+    "category": "scene",
+    "group": "Grid",
+    "hidden": false
+  },
+  {
+    "qName": "grid.move",
+    "id": "grid_move",
+    "category": "scene",
+    "group": "Grid",
+    "hidden": false
+  },
+  {
+    "qName": "grid.swap",
+    "id": "grid_swap",
+    "category": "scene",
+    "group": "Grid",
+    "hidden": false
+  },
+  {
+    "qName": "grid.getSprites",
+    "id": "grid_getSprites",
+    "category": "scene",
+    "group": "Grid",
+    "hidden": false
+  },
+  {
+    "qName": "grid.moveWithButtons",
+    "id": "grid_moveWithButtons",
+    "category": "scene",
+    "group": "Grid",
+    "hidden": false
+  },
+  {
+    "qName": "grid.rowSprites",
+    "id": "grid_rowSprites",
+    "category": "scene",
+    "group": "Grid",
+    "hidden": false
+  },
+  {
+    "qName": "grid.colSprites",
+    "id": "grid_colSprites",
+    "category": "scene",
+    "group": "Grid",
+    "hidden": false
+  },
+  {
+    "qName": "grid._gridDirectionEditor",
+    "id": "gridDirectionEditor",
+    "category": "scene",
+    "group": "Grid",
+    "hidden": false
+  },
+  {
+    "qName": "grid.allSprites",
+    "id": "grid_allSprites",
+    "category": "scene",
+    "group": "Grid",
+    "hidden": false
+  },
+  {
+    "qName": "grid.lineAdjacentSprites",
+    "id": "grid_lineAdjacentSprites",
+    "category": "scene",
+    "group": "Grid",
+    "hidden": false
+  },
+  {
+    "qName": "grid.spriteRow",
+    "id": "grid_spriteRow",
+    "category": "scene",
+    "group": "Grid",
+    "hidden": false
+  },
+  {
+    "qName": "grid.spriteCol",
+    "id": "grid_spriteCol",
+    "category": "scene",
+    "group": "Grid",
+    "hidden": false
+  },
+  {
+    "qName": "grid.snap",
+    "id": "grid_snap",
+    "category": "scene",
+    "group": "Grid",
+    "hidden": false
+  },
+  {
+    "qName": "grid.remove",
+    "id": "grid_remove",
+    "category": "scene",
+    "group": "Grid",
+    "hidden": false
+  },
+  {
+    "qName": "grid.lineAdjacentLocations",
+    "id": "grid_lineAdjacentLocations",
+    "category": "scene",
+    "group": "Grid",
+    "hidden": false
+  },
+  {
+    "qName": "miniMenu.MenuItem.setText",
+    "id": "mini_menu_menu_item_set_text",
+    "category": "miniMenu",
+    "group": "Menu Items",
+    "hidden": false
+  },
+  {
+    "qName": "miniMenu.MenuItem.getText",
+    "id": "mini_menu_menu_item_get_text",
+    "category": "miniMenu",
+    "group": "Menu Items",
+    "hidden": false
+  },
+  {
+    "qName": "miniMenu.MenuItem.setIcon",
+    "id": "mini_menu_menu_item_set_icon",
+    "category": "miniMenu",
+    "group": "Menu Items",
+    "hidden": false
+  },
+  {
+    "qName": "miniMenu.MenuItem.getIcon",
+    "id": "mini_menu_menu_item_get_icon",
+    "category": "miniMenu",
+    "group": "Menu Items",
+    "hidden": false
+  },
+  {
+    "qName": "miniMenu.MenuItem.setDisabled",
+    "id": "mini_menu_menu_item_set_disabled",
+    "category": "miniMenu",
+    "group": "Menu Items",
+    "hidden": false
+  },
+  {
+    "qName": "miniMenu.MenuItem.isDisabled",
+    "id": "mini_menu_menu_item_is_disabled",
+    "category": "miniMenu",
+    "group": "Menu Items",
+    "hidden": false
+  },
+  {
+    "qName": "miniMenu.MenuSprite.setButtonEventsEnabled",
+    "id": "mini_menu_sprite_set_button_events_enabled",
+    "category": "miniMenu",
+    "group": "Controls",
+    "hidden": true
+  },
+  {
+    "qName": "miniMenu.MenuSprite.moveSelection",
+    "id": "mini_menu_sprite_move_selection_up",
+    "category": "miniMenu",
+    "group": "Controls",
+    "hidden": true
+  },
+  {
+    "qName": "miniMenu.MenuSprite.close",
+    "id": "mini_menu_sprite_close_menu",
+    "category": "miniMenu",
+    "group": "Create",
+    "hidden": true
+  },
+  {
+    "qName": "miniMenu.MenuSprite.onButtonPressed",
+    "id": "mini_menu_on_button_pressed",
+    "category": "miniMenu",
+    "group": "Controls",
+    "hidden": true
+  },
+  {
+    "qName": "miniMenu.MenuSprite.onSelectionChanged",
+    "id": "mini_menu_on_selection_changed",
+    "category": "miniMenu",
+    "group": "Controls",
+    "hidden": true
+  },
+  {
+    "qName": "miniMenu.MenuSprite.setStyleProperty",
+    "id": "mini_menu_set_style_property",
+    "category": "miniMenu",
+    "group": "Styling",
+    "hidden": true
+  },
+  {
+    "qName": "miniMenu.MenuSprite.setMenuStyleProperty",
+    "id": "mini_menu_set_menu_style_property",
+    "category": "miniMenu",
+    "group": "Styling",
+    "hidden": true
+  },
+  {
+    "qName": "miniMenu.MenuSprite.setTitle",
+    "id": "mini_menu_set_menu_title",
+    "category": "miniMenu",
+    "group": "Create",
+    "hidden": true
+  },
+  {
+    "qName": "miniMenu.MenuSprite.setDimensions",
+    "id": "mini_menu_set_menu_dimensions",
+    "category": "miniMenu",
+    "group": "Create",
+    "hidden": true
+  },
+  {
+    "qName": "miniMenu.MenuSprite.setFrame",
+    "id": "mini_menu_set_menu_frame",
+    "category": "miniMenu",
+    "group": "Styling",
+    "hidden": true
+  },
+  {
+    "qName": "miniMenu.createMenuItem",
+    "id": "mini_menu_create_menu_item",
+    "category": "miniMenu",
+    "group": "Create",
+    "hidden": false
+  },
+  {
+    "qName": "miniMenu.createMenu",
+    "id": "mini_menu_show_menu",
+    "category": "miniMenu",
+    "group": "Create",
+    "hidden": false
+  },
+  {
+    "qName": "miniMenu.createMenuFromArray",
+    "id": "mini_menu_create_menu_from_array",
+    "category": "miniMenu",
+    "group": "Create",
+    "hidden": false
+  },
+  {
+    "qName": "miniMenu._moveDirection",
+    "id": "mini_menu_move_direction",
+    "category": "miniMenu",
+    "hidden": true
+  },
+  {
+    "qName": "miniMenu.createBorderBox",
+    "id": "mini_menu_create_border_box",
+    "category": "miniMenu",
+    "group": "Styling",
+    "hidden": false
+  },
+  {
+    "qName": "miniMenu.setButtonEventsEnabled",
+    "id": "mini_menu_sprite_set_button_events_enabled_new",
+    "category": "miniMenu",
+    "group": "Controls",
+    "hidden": false
+  },
+  {
+    "qName": "miniMenu.moveSelection",
+    "id": "mini_menu_sprite_move_selection_up_new",
+    "category": "miniMenu",
+    "group": "Controls",
+    "hidden": false
+  },
+  {
+    "qName": "miniMenu.setController",
+    "id": "mini_menu_sprite_set_controller",
+    "category": "miniMenu",
+    "group": "Controls",
+    "hidden": false
+  },
+  {
+    "qName": "miniMenu.close",
+    "id": "mini_menu_sprite_close_menu_new",
+    "category": "miniMenu",
+    "group": "Create",
+    "hidden": false
+  },
+  {
+    "qName": "miniMenu.onButtonPressed",
+    "id": "mini_menu_on_button_pressed_new",
+    "category": "miniMenu",
+    "group": "Controls",
+    "hidden": false
+  },
+  {
+    "qName": "miniMenu.onSelectionChanged",
+    "id": "mini_menu_on_selection_changed_new",
+    "category": "miniMenu",
+    "group": "Controls",
+    "hidden": false
+  },
+  {
+    "qName": "miniMenu.setStyleProperty",
+    "id": "mini_menu_set_style_property_new",
+    "category": "miniMenu",
+    "group": "Styling",
+    "hidden": false
+  },
+  {
+    "qName": "miniMenu.setMenuStyleProperty",
+    "id": "mini_menu_set_menu_style_property_new",
+    "category": "miniMenu",
+    "group": "Styling",
+    "hidden": false
+  },
+  {
+    "qName": "miniMenu.setTitle",
+    "id": "mini_menu_set_menu_title_new",
+    "category": "miniMenu",
+    "group": "Create",
+    "hidden": false
+  },
+  {
+    "qName": "miniMenu.setDimensions",
+    "id": "mini_menu_set_menu_dimensions_new",
+    "category": "miniMenu",
+    "group": "Create",
+    "hidden": false
+  },
+  {
+    "qName": "miniMenu.setFrame",
+    "id": "mini_menu_set_menu_frame_new",
+    "category": "miniMenu",
+    "group": "Styling",
+    "hidden": false
+  },
+  {
+    "qName": "miniMenu.getMenuItem",
+    "id": "mini_menu_get_menu_item",
+    "category": "miniMenu",
+    "group": "Menu Items",
+    "hidden": false
+  },
+  {
+    "qName": "miniMenu.getMenuItems",
+    "id": "mini_menu_get_menu_items",
+    "category": "miniMenu",
+    "group": "Menu Items",
+    "hidden": false
+  },
+  {
+    "qName": "miniMenu.removeMenuItem",
+    "id": "mini_menu_remove_menu_item",
+    "category": "miniMenu",
+    "group": "Menu Items",
+    "hidden": false
+  },
+  {
+    "qName": "miniMenu.insertMenuItem",
+    "id": "mini_menu_insert_menu_item",
+    "category": "miniMenu",
+    "group": "Menu Items",
+    "hidden": false
+  },
+  {
+    "qName": "overworld.setOverworld16",
+    "id": "overworld_setOverworld16",
+    "category": "scene",
+    "group": "Overworld",
+    "hidden": false
+  },
+  {
+    "qName": "overworld.setOverworld8",
+    "id": "overworld_setOverworld8",
+    "category": "scene",
+    "group": "Overworld",
+    "hidden": false
+  },
+  {
+    "qName": "overworld.setPlayerSprite",
+    "id": "overworld_setPlayerSprite",
+    "category": "scene",
+    "group": "Overworld",
+    "hidden": false
+  },
+  {
+    "qName": "overworld.currentLocation",
+    "id": "overworld_currentLocation",
+    "category": "scene",
+    "group": "Overworld",
+    "hidden": false
+  },
+  {
+    "qName": "overworld.loadMap",
+    "id": "overworld_loadMap",
+    "category": "scene",
+    "group": "Overworld",
+    "hidden": false
+  },
+  {
+    "qName": "overworld.loadMapInDirection",
+    "id": "overworld_loadMapInDirection",
+    "category": "scene",
+    "group": "Overworld",
+    "hidden": false
+  },
+  {
+    "qName": "overworld.getMapAt",
+    "id": "overworld_getMapAt",
+    "category": "scene",
+    "group": "Overworld",
+    "hidden": false
+  },
+  {
+    "qName": "overworld.getMapInDirection",
+    "id": "overworld_getMapInDirection",
+    "category": "scene",
+    "group": "Overworld",
+    "hidden": false
+  },
+  {
+    "qName": "overworld.mapExistsAt",
+    "id": "overworld_mapExistsAt",
+    "category": "scene",
+    "group": "Overworld",
+    "hidden": false
+  },
+  {
+    "qName": "overworld.mapExistsInDirection",
+    "id": "overworld_mapExistsInDirection",
+    "category": "scene",
+    "group": "Overworld",
+    "hidden": false
+  },
+  {
+    "qName": "overworld.onMapLoaded",
+    "id": "overworld_onMapLoaded",
+    "category": "scene",
+    "group": "Overworld",
+    "hidden": false
+  },
+  {
+    "qName": "overworld.setAnimationType",
+    "id": "overworld_setAnimationType",
+    "category": "scene",
+    "group": "Overworld",
+    "hidden": false
+  },
+  {
+    "qName": "overworld.setAnimationDuration",
+    "id": "overworld_setAnimationDuration",
+    "category": "scene",
+    "group": "Overworld",
+    "hidden": false
+  },
+  {
+    "qName": "overworld.setAnimationTimingFunction",
+    "id": "overworld_setAnimationTimingFunction",
+    "category": "scene",
+    "group": "Overworld",
+    "hidden": false
+  },
+  {
+    "qName": "overworld.setAnimationFadeColor",
+    "id": "overworld_setAnimationFadeColor",
+    "category": "scene",
+    "group": "Overworld",
+    "hidden": false
+  },
+  {
+    "qName": "overworld.setScrollAnimationZIndex",
+    "id": "overworld_setScrollAnimationZIndex",
+    "category": "scene",
+    "group": "Overworld",
+    "hidden": false
+  },
+  {
+    "qName": "overworld.setMapTransitionsEnabled",
+    "id": "overworld_setMapTransitionsEnabled",
+    "category": "scene",
+    "group": "Overworld",
+    "hidden": false
+  },
+  {
+    "qName": "overworld.setMapTransitionRadius",
+    "id": "overworld_setMapTransitionRadius",
+    "category": "scene",
+    "group": "Overworld",
+    "hidden": false
+  },
+  {
+    "qName": "overworld.setWallsBlockTransitions",
+    "id": "overworld_setWallsBlockTransitions",
+    "category": "scene",
+    "group": "Overworld",
+    "hidden": false
+  },
+  {
+    "qName": "overworld.setContinuousModeEnabled",
+    "id": "overworld_setContinuousModeEnabled",
+    "category": "scene",
+    "group": "Overworld",
+    "hidden": false
+  },
+  {
+    "qName": "overworld.createMap16",
+    "id": "overworld_createMap16",
+    "category": "scene",
+    "group": "Overworld",
+    "hidden": false
+  },
+  {
+    "qName": "overworld.createMap8",
+    "id": "overworld_createMap8",
+    "category": "scene",
+    "group": "Overworld",
+    "hidden": false
+  },
+  {
+    "qName": "overworld.mapRow16",
+    "id": "overworld_mapRow16",
+    "category": "scene",
+    "group": "Overworld",
+    "hidden": false
+  },
+  {
+    "qName": "overworld.mapRow8",
+    "id": "overworld_mapRow8",
+    "category": "scene",
+    "group": "Overworld",
+    "hidden": false
+  },
+  {
+    "qName": "overworld.tilemap8",
+    "id": "overworld_tilemap8",
+    "category": "scene",
+    "group": "Overworld",
+    "hidden": false
+  },
+  {
+    "qName": "overworld.tilemap16",
+    "id": "overworld_tilemap16",
+    "category": "scene",
+    "group": "Overworld",
+    "hidden": false
+  },
+  {
+    "qName": "screenTransitions._transition",
+    "id": "screen_transitions_field_editor",
+    "category": "scene",
+    "group": "Transitions",
+    "hidden": false
+  },
+  {
+    "qName": "screenTransitions.imageTransition",
+    "id": "screen_transitions_image_transition",
+    "category": "scene",
+    "group": "Transitions",
+    "hidden": false
+  },
+  {
+    "qName": "screenTransitions.startTransition",
+    "id": "screen_transitions_start_transition",
+    "category": "scene",
+    "group": "Transitions",
+    "hidden": false
+  },
+  {
+    "qName": "screenTransitions.showTransitionAtPercent",
+    "id": "screen_transitions_show_transition_at_percent",
+    "category": "scene",
+    "group": "Transitions",
+    "hidden": false
+  },
+  {
+    "qName": "screenTransitions.clearScreenTransition",
+    "id": "screen_transitions_clear_screen_transition",
+    "category": "scene",
+    "group": "Transitions",
+    "hidden": false
+  },
+  {
+    "qName": "screenTransitions.setZ",
+    "id": "screen_transitions_set_z",
+    "category": "scene",
+    "group": "Transitions",
+    "hidden": false
+  },
+  {
+    "qName": "screenTransitions.setSpriteZ",
+    "id": "screen_transitions_set_sprite_z",
+    "category": "scene",
+    "group": "Transitions",
+    "hidden": false
+  },
+  {
+    "qName": "screenTransitions.changeSpriteZ",
+    "id": "screen_transitions_change_sprite_z",
+    "category": "scene",
+    "group": "Transitions",
+    "hidden": false
+  },
+  {
+    "qName": "screenTransitions.setScreenTransitionDirection",
+    "id": "screen_transitions_swap_direction",
+    "category": "scene",
+    "group": "Transitions",
+    "hidden": false
+  },
+  {
+    "qName": "shadowcasting.setAnchor",
+    "id": "shadowcasting_setAnchor",
+    "category": "scene",
+    "group": "Shadows",
+    "hidden": false
+  },
+  {
+    "qName": "shadowcasting.setShadowColor",
+    "id": "shadowcasting_setShadowColor",
+    "category": "scene",
+    "group": "Shadows",
+    "hidden": false
+  },
+  {
+    "qName": "shadowcasting.setShadowMode",
+    "id": "shadowcasting_setShadowMode",
+    "category": "scene",
+    "group": "Shadows",
+    "hidden": false
+  },
+  {
+    "qName": "shadowcasting.setShadowImage",
+    "id": "shadowcasting_setShadowImage",
+    "category": "scene",
+    "group": "Shadows",
+    "hidden": false
+  },
+  {
+    "qName": "shadowcasting.setShadowEnabled",
+    "id": "shadowcasting_setShadowEnabled",
+    "category": "scene",
+    "group": "Shadows",
+    "hidden": false
+  },
+  {
+    "qName": "shadowcasting.setShadowZIndex",
+    "id": "shadowcasting_setShadowZIndex",
+    "category": "scene",
+    "group": "Shadows",
+    "hidden": false
+  },
+  {
+    "qName": "splitScreen.splitScreenCameraFollow",
+    "id": "splitscreencamerafollowsprite",
+    "category": "scene",
+    "group": "Split screen",
+    "hidden": true
+  },
+  {
+    "qName": "splitScreen.cameraFollowSprite",
+    "id": "splitscreensetcanerasprite",
+    "category": "scene",
+    "group": "Split screen",
+    "hidden": false
+  },
+  {
+    "qName": "splitScreen.centerCameraAt",
+    "id": "splitscreencentercameraat",
+    "category": "scene",
+    "group": "Split screen",
+    "hidden": false
+  },
+  {
+    "qName": "splitScreen.cameraShake",
+    "id": "splitscreencamerashake",
+    "category": "scene",
+    "group": "Split screen",
+    "hidden": false
+  },
+  {
+    "qName": "splitScreen.setCameraRegion",
+    "id": "splitscreensetcameraregion",
+    "category": "scene",
+    "group": "Split screen",
+    "hidden": false
+  },
+  {
+    "qName": "splitScreen.setSplitScreenEnabled",
+    "id": "splitscreencamerasetenabled",
+    "category": "scene",
+    "group": "Split screen",
+    "hidden": false
+  },
+  {
+    "qName": "splitScreen.setBorderColor",
+    "id": "splitscreensetBorderColor",
+    "category": "scene",
+    "group": "Split screen",
+    "hidden": false
+  },
+  {
+    "qName": "splitScreen._cameraShadow",
+    "id": "splitscreen_camerashadow",
+    "category": "scene",
+    "group": "Split screen",
+    "hidden": false
+  },
+  {
+    "qName": "splitScreen._cameraRegionShadow",
+    "id": "splitscreen_cameraregionshadow",
+    "category": "scene",
+    "group": "Split screen",
+    "hidden": false
+  },
+  {
+    "qName": "splitScreen.setSplitScreenZIndex",
+    "id": "splitscreen_setSplitScreenZIndex",
+    "category": "scene",
+    "group": "Split screen",
+    "hidden": false
+  },
+  {
+    "qName": "splitScreen.getSprite",
+    "id": "splitscreen_getSprite",
+    "category": "scene",
+    "group": "Split screen",
+    "hidden": false
+  },
+  {
+    "qName": "splitScreen.getCameraProperty",
+    "id": "splitscreen_getCameraProperty",
+    "category": "scene",
+    "group": "Split screen",
+    "hidden": false
+  },
+  {
+    "qName": "splitScreen.setRenderSize",
+    "id": "splitscreen_setRenderSize",
+    "category": "scene",
+    "group": "Split screen",
+    "hidden": false
+  },
+  {
+    "qName": "splitScreen.createCameraView",
+    "id": "splitscreen_createCameraView",
+    "category": "scene",
+    "group": "Split screen",
+    "hidden": false
+  },
+  {
+    "qName": "splitScreen.cameraViewFollow",
+    "id": "splitscreen_cameraViewFollow",
+    "category": "scene",
+    "group": "Split screen",
+    "hidden": false
+  },
+  {
+    "qName": "splitScreen.centerCameraViewAt",
+    "id": "splitscreen_centerCameraViewAt",
+    "category": "scene",
+    "group": "Split screen",
+    "hidden": false
+  },
+  {
+    "qName": "splitScreen.shakeCameraView",
+    "id": "splitscreen_cameraViewShake",
+    "category": "scene",
+    "group": "Split screen",
+    "hidden": false
+  },
+  {
+    "qName": "splitScreen.cameraViewSetZIndex",
+    "id": "splitscreen_cameraViewSetZIndex",
+    "category": "scene",
+    "group": "Split screen",
+    "hidden": false
+  },
+  {
+    "qName": "splitScreen.getCameraViewProperty",
+    "id": "splitscreen_getCameraViewProperty",
+    "category": "scene",
+    "group": "Split screen",
+    "hidden": false
+  },
+  {
+    "qName": "splitScreen.setCameraViewBorderColor",
+    "id": "splitscreen_setCameraViewBorderColor",
+    "category": "scene",
+    "group": "Split screen",
+    "hidden": false
+  },
+  {
+    "qName": "sprites.setDataNumber",
+    "id": "spriteDataSetNumber",
+    "category": "sprites",
+    "group": "Data",
+    "hidden": false
+  },
+  {
+    "qName": "sprites.changeDataNumberBy",
+    "id": "spriteDataChangeNumber",
+    "category": "sprites",
+    "group": "Data",
+    "hidden": false
+  },
+  {
+    "qName": "sprites.readDataNumber",
+    "id": "spriteDataGetNumber",
+    "category": "sprites",
+    "group": "Data",
+    "hidden": false
+  },
+  {
+    "qName": "sprites.setDataString",
+    "id": "spriteDataSetString",
+    "category": "sprites",
+    "group": "Data",
+    "hidden": false
+  },
+  {
+    "qName": "sprites.readDataString",
+    "id": "spriteDataGetString",
+    "category": "sprites",
+    "group": "Data",
+    "hidden": false
+  },
+  {
+    "qName": "sprites.setDataBoolean",
+    "id": "spriteDataSetBoolean",
+    "category": "sprites",
+    "group": "Data",
+    "hidden": false
+  },
+  {
+    "qName": "sprites.readDataBoolean",
+    "id": "spriteDataGetBoolean",
+    "category": "sprites",
+    "group": "Data",
+    "hidden": false
+  },
+  {
+    "qName": "sprites.setDataSprite",
+    "id": "spriteDataSetSprite",
+    "category": "sprites",
+    "group": "Data",
+    "hidden": false
+  },
+  {
+    "qName": "sprites.readDataSprite",
+    "id": "spriteDataGetSprite",
+    "category": "sprites",
+    "group": "Data",
+    "hidden": false
+  },
+  {
+    "qName": "sprites.setDataImage",
+    "id": "spriteDataSetImage",
+    "category": "sprites",
+    "group": "Data",
+    "hidden": true
+  },
+  {
+    "qName": "sprites.setDataImageValue",
+    "id": "spriteDataSetImageValue",
+    "category": "sprites",
+    "group": "Data",
+    "hidden": false
+  },
+  {
+    "qName": "sprites.readDataImage",
+    "id": "spriteDataGetImage",
+    "category": "sprites",
+    "group": "Data",
+    "hidden": false
+  },
+  {
+    "qName": "sprites._numberNameShadow",
+    "id": "spriteDataNumberNameShadow",
+    "category": "sprites",
+    "group": "Data",
+    "hidden": true
+  },
+  {
+    "qName": "sprites._spriteNameShadow",
+    "id": "spriteDataSpriteNameShadow",
+    "category": "sprites",
+    "group": "Data",
+    "hidden": true
+  },
+  {
+    "qName": "sprites._booleanNameShadow",
+    "id": "spriteDataBooleanNameShadow",
+    "category": "sprites",
+    "group": "Data",
+    "hidden": true
+  },
+  {
+    "qName": "sprites._stringNameShadow",
+    "id": "spriteDataStringNameShadow",
+    "category": "sprites",
+    "group": "Data",
+    "hidden": true
+  },
+  {
+    "qName": "sprites._imageNameShadow",
+    "id": "spriteDataImageNameShadow",
+    "category": "sprites",
+    "group": "Data",
+    "hidden": true
+  },
+  {
+    "qName": "events.spriteEvent",
+    "id": "sprite_event_ext_sprite_event",
+    "category": "sprites",
+    "group": "Events",
+    "hidden": false
+  },
+  {
+    "qName": "events.tileEvent",
+    "id": "sprite_event_ext_tile_event",
+    "category": "sprites",
+    "group": "Events",
+    "hidden": false
+  },
+  {
+    "qName": "events.wallEvent",
+    "id": "sprite_event_ext_wall_event",
+    "category": "sprites",
+    "group": "Events",
+    "hidden": false
+  },
+  {
+    "qName": "events.regionEvent",
+    "id": "sprite_event_ext_region_event",
+    "category": "sprites",
+    "group": "Events",
+    "hidden": false
+  },
+  {
+    "qName": "events.createCoordinate",
+    "id": "sprite_event_ext_create_coordinate",
+    "category": "sprites",
+    "group": "Events",
+    "hidden": true
+  },
+  {
+    "qName": "events.createRegionFromCoordinates",
+    "id": "sprite_event_ext_create_region_from_coordinates",
+    "category": "sprites",
+    "group": "Events",
+    "hidden": false
+  },
+  {
+    "qName": "events.createRegionFromLocations",
+    "id": "sprite_event_ext_create_region_from_locations",
+    "category": "sprites",
+    "group": "Events",
+    "hidden": false
+  },
+  {
+    "qName": "events.simpleWallCondition",
+    "id": "sprite_event_ext_simple_wall_condition",
+    "category": "sprites",
+    "group": "Events",
+    "hidden": false
+  },
+  {
+    "qName": "events.wallCondition",
+    "id": "sprite_event_ext_wall_condition",
+    "category": "sprites",
+    "group": "Events",
+    "hidden": false
+  },
+  {
+    "qName": "spriteutils.isDestroyed",
+    "id": "spriteutilextisdestroyed",
+    "category": "sprites",
+    "group": "Spatial tools",
+    "hidden": false
+  },
+  {
+    "qName": "spriteutils.distanceBetween",
+    "id": "spriteutilextdistbw",
+    "category": "sprites",
+    "group": "Spatial tools",
+    "hidden": false
+  },
+  {
+    "qName": "spriteutils.heading",
+    "id": "spriteutilheading",
+    "category": "sprites",
+    "group": "Spatial tools",
+    "hidden": false
+  },
+  {
+    "qName": "spriteutils.speed",
+    "id": "spriteutilspeed",
+    "category": "sprites",
+    "group": "Spatial tools",
+    "hidden": false
+  },
+  {
+    "qName": "spriteutils.moveTo",
+    "id": "spriteutilmoveto",
+    "category": "sprites",
+    "group": "Spatial tools",
+    "hidden": true
+  },
+  {
+    "qName": "spriteutils.moveToAtSpeed",
+    "id": "spriteutilmovetoatspeed",
+    "category": "sprites",
+    "group": "Spatial tools",
+    "hidden": true
+  },
+  {
+    "qName": "spriteutils.getSpritesWithin",
+    "id": "spriteutils_getSpritesWithin",
+    "category": "sprites",
+    "group": "Spatial tools",
+    "hidden": false
+  },
+  {
+    "qName": "spriteutils.angleFrom",
+    "id": "spriteutilextanglebw",
+    "category": "sprites",
+    "group": "Spatial tools",
+    "hidden": false
+  },
+  {
+    "qName": "spriteutils.placeAngleFrom",
+    "id": "spriteutilextplaceanglefrom",
+    "category": "sprites",
+    "group": "Spatial tools",
+    "hidden": false
+  },
+  {
+    "qName": "spriteutils.setVelocityAtAngle",
+    "id": "spriteutilextsetspeedanglefrom",
+    "category": "sprites",
+    "group": "Spatial tools",
+    "hidden": false
+  },
+  {
+    "qName": "spriteutils.onSpriteUpdateInterval",
+    "id": "spriteutilonspriteupdateinterval",
+    "category": "sprites",
+    "group": "Spatial tools",
+    "hidden": false
+  },
+  {
+    "qName": "spriteutils.onSpriteKindUpdateInterval",
+    "id": "spriteutilonspritekindupdateinterval",
+    "category": "sprites",
+    "group": "Spatial tools",
+    "hidden": false
+  },
+  {
+    "qName": "spriteutils.radiansToDegrees",
+    "id": "spriteutilextradtodeg",
+    "category": "sprites",
+    "group": "Spatial tools",
+    "hidden": false
+  },
+  {
+    "qName": "spriteutils.degreesToRadians",
+    "id": "spriteutilextdegtorad",
+    "category": "sprites",
+    "group": "Spatial tools",
+    "hidden": false
+  },
+  {
+    "qName": "spriteutils.createRenderable",
+    "id": "spriteutilextcreaterenderable",
+    "category": "sprites",
+    "group": "Spatial tools",
+    "hidden": true
+  },
+  {
+    "qName": "spriteutils.drawTransparentImage",
+    "id": "spriteutilextdrawtransparentimg",
+    "category": "sprites",
+    "group": "Spatial tools",
+    "hidden": true
+  },
+  {
+    "qName": "spriteutils.drawCircle",
+    "id": "spriteutilextdrawcircle",
+    "category": "sprites",
+    "group": "Spatial tools",
+    "hidden": true
+  },
+  {
+    "qName": "spriteutils.fillCircle",
+    "id": "spriteutilextdrawfilledcircle",
+    "category": "sprites",
+    "group": "Spatial tools",
+    "hidden": true
+  },
+  {
+    "qName": "spriteutils.setConsoleOverlay",
+    "id": "spriteutilextsetconsolevisible",
+    "category": "sprites",
+    "group": "Spatial tools",
+    "hidden": true
+  },
+  {
+    "qName": "spriteutils.setLifeImage",
+    "id": "spriteutilextsetlifeimage",
+    "category": "sprites",
+    "group": "Spatial tools",
+    "hidden": true
+  },
+  {
+    "qName": "spriteutils._lifeImage",
+    "id": "life_image_picker",
+    "category": "sprites",
+    "group": "Spatial tools",
+    "hidden": true
+  },
+  {
+    "qName": "spriteutils.roundWithPrecision",
+    "id": "spriteutilextroundwithprecision",
+    "category": "sprites",
+    "group": "Spatial tools",
+    "hidden": false
+  },
+  {
+    "qName": "spriteutils.addEventHandler",
+    "id": "spriteutiladdeventhandler",
+    "category": "sprites",
+    "group": "Spatial tools",
+    "hidden": true
+  },
+  {
+    "qName": "spriteutils.jumpImpulse",
+    "id": "spriteutiljumpimpulse",
+    "category": "sprites",
+    "group": "Spatial tools",
+    "hidden": false
+  },
+  {
+    "qName": "spriteutils.consts",
+    "id": "spriteutilmathconsts",
+    "category": "sprites",
+    "group": "Spatial tools",
+    "hidden": true
+  },
+  {
+    "qName": "spriteutils.nullConsts",
+    "id": "spriteutilnullconsts",
+    "category": "sprites",
+    "group": "Spatial tools",
+    "hidden": true
+  },
+  {
+    "qName": "spriteutils.pos",
+    "id": "spriteutilpos",
+    "category": "sprites",
+    "group": "Spatial tools",
+    "hidden": true
+  },
+  {
+    "qName": "spriteutils.point",
+    "id": "spriteutilpoint",
+    "category": "sprites",
+    "group": "Spatial tools",
+    "hidden": false
+  },
+  {
+    "qName": "spriteutils.transformSpriteImage",
+    "id": "spriteutiltransformspriteimage",
+    "category": "sprites",
+    "group": "Spatial tools",
+    "hidden": true
+  },
+  {
+    "qName": "stateTransitions.spriteState",
+    "id": "state_transitions_spriteState",
+    "category": "game",
+    "group": "States",
+    "hidden": false
+  },
+  {
+    "qName": "stateTransitions.spriteTimeInState",
+    "id": "state_transitions_spriteTimeInState",
+    "category": "game",
+    "group": "States",
+    "hidden": false
+  },
+  {
+    "qName": "stateTransitions.spriteChangeState",
+    "id": "state_transitions_spriteChangeState",
+    "category": "game",
+    "group": "States",
+    "hidden": false
+  },
+  {
+    "qName": "stateTransitions.spriteOnStateEvent",
+    "id": "state_transitions_spriteOnStateEvent",
+    "category": "game",
+    "group": "States",
+    "hidden": false
+  },
+  {
+    "qName": "stateTransitions.spriteOnButtonEvent",
+    "id": "state_transitions_spriteOnButtonEvent",
+    "category": "game",
+    "group": "States",
+    "hidden": false
+  },
+  {
+    "qName": "stateTransitions.spriteOnStateChange",
+    "id": "state_transitions_spriteOnStateChange",
+    "category": "game",
+    "group": "States",
+    "hidden": false
+  },
+  {
+    "qName": "stateTransitions.spriteStateIs",
+    "id": "state_transitions_spriteStateIs",
+    "category": "game",
+    "group": "States",
+    "hidden": false
+  },
+  {
+    "qName": "stateTransitions.state",
+    "id": "state_transitions_state",
+    "category": "game",
+    "group": "States",
+    "hidden": false
+  },
+  {
+    "qName": "stateTransitions.timeInState",
+    "id": "state_transitions_timeInState",
+    "category": "game",
+    "group": "States",
+    "hidden": false
+  },
+  {
+    "qName": "stateTransitions.changeState",
+    "id": "state_transitions_changeState",
+    "category": "game",
+    "group": "States",
+    "hidden": false
+  },
+  {
+    "qName": "stateTransitions.onStateEvent",
+    "id": "state_transitions_onStateEvent",
+    "category": "game",
+    "group": "States",
+    "hidden": false
+  },
+  {
+    "qName": "stateTransitions.onButtonEvent",
+    "id": "state_transitions_onButtonEvent",
+    "category": "game",
+    "group": "States",
+    "hidden": false
+  },
+  {
+    "qName": "stateTransitions.onStateChange",
+    "id": "state_transitions_onStateChange",
+    "category": "game",
+    "group": "States",
+    "hidden": false
+  },
+  {
+    "qName": "stateTransitions.stateIs",
+    "id": "state_transitions_stateIs",
+    "category": "game",
+    "group": "States",
+    "hidden": false
+  },
+  {
+    "qName": "stateTransitions._spriteStateShadow",
+    "id": "state_transitions_spriteStateShadow",
+    "category": "game",
+    "group": "States",
+    "hidden": true
+  },
+  {
+    "qName": "stateTransitions._globalStateShadow",
+    "id": "state_transitions_globalStateShadow",
+    "category": "game",
+    "group": "States",
+    "hidden": true
+  },
+  {
+    "qName": "stateTransitions.spriteOnBackgroundStateEvent",
+    "id": "state_transitions_spriteOnBackgroundStateEvent",
+    "category": "game",
+    "group": "States",
+    "hidden": false
+  },
+  {
+    "qName": "stateTransitions.spriteOnBackgroundButtonEvent",
+    "id": "state_transitions_spriteOnBackgroundButtonEvent",
+    "category": "game",
+    "group": "States",
+    "hidden": false
+  },
+  {
+    "qName": "story.Script.addLineToCurrentPage",
+    "id": "script_add_line",
+    "category": "story",
+    "group": "Script",
+    "hidden": true
+  },
+  {
+    "qName": "story.Script.newPage",
+    "id": "script_new_page",
+    "category": "story",
+    "group": "Script",
+    "hidden": true
+  },
+  {
+    "qName": "story.Script.setColors",
+    "id": "script_set_colors",
+    "category": "story",
+    "group": "Script",
+    "hidden": true
+  },
+  {
+    "qName": "story.Script.setPagePauseLength",
+    "id": "script_set_pause_length",
+    "category": "story",
+    "group": "Script",
+    "hidden": true
+  },
+  {
+    "qName": "story.Script.setRelativeToCamera",
+    "id": "script_set_relative_to_camera",
+    "category": "story",
+    "group": "Script",
+    "hidden": true
+  },
+  {
+    "qName": "story.createEmptyScript",
+    "id": "story_create_script",
+    "category": "story",
+    "group": "Script",
+    "hidden": true
+  },
+  {
+    "qName": "story.createScript",
+    "id": "story_create_script_arguments",
+    "category": "story",
+    "group": "Script",
+    "hidden": true
+  },
+  {
+    "qName": "story.printScript",
+    "id": "story_print_script",
+    "category": "story",
+    "group": "Script",
+    "hidden": true
+  },
+  {
+    "qName": "story.spriteSayScript",
+    "id": "story_sprite_say_script",
+    "category": "story",
+    "group": "Script",
+    "hidden": true
+  },
+  {
+    "qName": "story.queueStoryPart",
+    "id": "story_queue_story_part",
+    "category": "story",
+    "group": "Sequence",
+    "hidden": true
+  },
+  {
+    "qName": "story.clearQueuedStoryParts",
+    "id": "story_clear_story_parts",
+    "category": "story",
+    "group": "Scene",
+    "hidden": true
+  },
+  {
+    "qName": "story.spriteMoveToLocation",
+    "id": "story_sprite_move_to_location",
+    "category": "story",
+    "group": "Movement",
+    "hidden": false
+  },
+  {
+    "qName": "story.cancelSpriteMovement",
+    "id": "story_sprite_cancel_movement",
+    "category": "story",
+    "group": "Movement",
+    "hidden": false
+  },
+  {
+    "qName": "story.pushScene",
+    "id": "story_push_scene",
+    "category": "story",
+    "group": "Scene",
+    "hidden": true
+  },
+  {
+    "qName": "story.popScene",
+    "id": "story_pop_scene",
+    "category": "story",
+    "group": "Scene",
+    "hidden": true
+  },
+  {
+    "qName": "story.clearScene",
+    "id": "story_clear_scene",
+    "category": "story",
+    "group": "Scene",
+    "hidden": true
+  },
+  {
+    "qName": "story.clearAllText",
+    "id": "story_clear_all_text",
+    "category": "story",
+    "group": "Cutscene",
+    "hidden": false
+  },
+  {
+    "qName": "story.printText",
+    "id": "story_show_text",
+    "category": "story",
+    "group": "Text",
+    "hidden": false
+  },
+  {
+    "qName": "story.spriteSayText",
+    "id": "story_sprite_say_text",
+    "category": "story",
+    "group": "Text",
+    "hidden": false
+  },
+  {
+    "qName": "story.printDialog",
+    "id": "story_print_dialog",
+    "category": "story",
+    "group": "Text",
+    "hidden": false
+  },
+  {
+    "qName": "story.setPagePauseLength",
+    "id": "story_set_page_pause_length",
+    "category": "story",
+    "group": "Text",
+    "hidden": false
+  },
+  {
+    "qName": "story.setSoundEnabled",
+    "id": "story_set_sound_enabled",
+    "category": "story",
+    "group": "Text",
+    "hidden": false
+  },
+  {
+    "qName": "story.startCutscene",
+    "id": "arcade_story_start_cutscene",
+    "category": "story",
+    "group": "Cutscene",
+    "hidden": false
+  },
+  {
+    "qName": "story.startConveration",
+    "id": "arcade_story_start_conversation",
+    "category": "story",
+    "group": "Cutscene",
+    "hidden": true
+  },
+  {
+    "qName": "story.printCharacterText",
+    "id": "arcade_story_print_character_text",
+    "category": "story",
+    "group": "Text",
+    "hidden": false
+  },
+  {
+    "qName": "story.showPlayerChoices",
+    "id": "arcade_story_show_player_choices",
+    "category": "story",
+    "group": "Menu",
+    "hidden": false
+  },
+  {
+    "qName": "story.checkLastAnswer",
+    "id": "arcade_story_last_answer",
+    "category": "story",
+    "group": "Menu",
+    "hidden": false
+  },
+  {
+    "qName": "story.cancelCurrentConversation",
+    "id": "arcade_story_cancel_conversation",
+    "category": "story",
+    "group": "Menu",
+    "hidden": true
+  },
+  {
+    "qName": "story.getLastAnswer",
+    "id": "arcade_story_get_last_answer",
+    "category": "story",
+    "group": "Menu",
+    "hidden": false
+  },
+  {
+    "qName": "story.isMenuOpen",
+    "id": "arcade_story_is_menu_open",
+    "category": "story",
+    "group": "Menu",
+    "hidden": false
+  },
+  {
+    "qName": "story.cancelCurrentCutscene",
+    "id": "arcade_story_cancel_cutscene",
+    "category": "story",
+    "group": "Cutscene",
+    "hidden": false
+  },
+  {
+    "qName": "story.cancelAllCutscenes",
+    "id": "arcade_story_cancel_all_cutscenes",
+    "category": "story",
+    "group": "Cutscene",
+    "hidden": false
+  },
+  {
+    "qName": "TextSprite.setMaxFontHeight",
+    "id": "TextSprite_setMaxFontHeight",
+    "category": "sprites",
+    "group": "Text",
+    "hidden": false
+  },
+  {
+    "qName": "TextSprite.setIcon",
+    "id": "TextSprite_setIcon",
+    "category": "sprites",
+    "group": "Text",
+    "hidden": false
+  },
+  {
+    "qName": "TextSprite.setText",
+    "id": "TextSprite_setText",
+    "category": "sprites",
+    "group": "Text",
+    "hidden": false
+  },
+  {
+    "qName": "TextSprite.setBorder",
+    "id": "TextSprite_setBorder",
+    "category": "sprites",
+    "group": "Text",
+    "hidden": false
+  },
+  {
+    "qName": "TextSprite.setOutline",
+    "id": "TextSprite_setOutline",
+    "category": "sprites",
+    "group": "Text",
+    "hidden": false
+  },
+  {
+    "qName": "textsprite.create",
+    "id": "textsprite_create",
+    "category": "sprites",
+    "group": "Text",
+    "hidden": false
+  },
+  {
+    "qName": "tileScanner.scanInDirection",
+    "id": "tileScanner_scanInDirection",
+    "category": "scene",
+    "group": "Tile rules",
+    "hidden": false
+  },
+  {
+    "qName": "tileScanner.bfs",
+    "id": "tileScanner_bfs",
+    "category": "scene",
+    "group": "Tile rules",
+    "hidden": false
+  },
+  {
+    "qName": "tileScanner.getAllMatchingLocations",
+    "id": "tileScanner_getAllMatchingLocations",
+    "category": "scene",
+    "group": "Tile rules",
+    "hidden": false
+  },
+  {
+    "qName": "tileScanner.getAdjacentLocations",
+    "id": "tileScanner_getAdjacentLocations",
+    "category": "scene",
+    "group": "Tile rules",
+    "hidden": false
+  },
+  {
+    "qName": "tileScanner.scanForLines",
+    "id": "tileScanner_scanForLines",
+    "category": "scene",
+    "group": "Tile rules",
+    "hidden": false
+  },
+  {
+    "qName": "tileScanner.scanForGroups",
+    "id": "tileScanner_scanForGroups",
+    "category": "scene",
+    "group": "Tile rules",
+    "hidden": false
+  },
+  {
+    "qName": "tileScanner.matchesRule",
+    "id": "tileScanner_matchesRule",
+    "category": "scene",
+    "group": "Tile rules",
+    "hidden": false
+  },
+  {
+    "qName": "tileScanner.tileIs",
+    "id": "tileScanner_tileIs",
+    "category": "scene",
+    "group": "Tile rules",
+    "hidden": false
+  },
+  {
+    "qName": "tileScanner.isWall",
+    "id": "tileScanner_isWall",
+    "category": "scene",
+    "group": "Tile rules",
+    "hidden": false
+  },
+  {
+    "qName": "tileScanner.isInsideMap",
+    "id": "tileScanner_isInsideMap",
+    "category": "scene",
+    "group": "Tile rules",
+    "hidden": false
+  },
+  {
+    "qName": "tileScanner.comparison",
+    "id": "tileScanner_comparison",
+    "category": "scene",
+    "group": "Tile rules",
+    "hidden": false
+  },
+  {
+    "qName": "tileScanner.borders",
+    "id": "tileScanner_borders",
+    "category": "scene",
+    "group": "Tile rules",
+    "hidden": false
+  },
+  {
+    "qName": "tileScanner.bordersSides",
+    "id": "tileScanner_bordersSides",
+    "category": "scene",
+    "group": "Tile rules",
+    "hidden": false
+  },
+  {
+    "qName": "tileScanner.sideGroups",
+    "id": "tileScanner_sideGroups",
+    "category": "scene",
+    "group": "Tile rules",
+    "hidden": true
+  },
+  {
+    "qName": "tileScanner.not",
+    "id": "tileScanner_not",
+    "category": "scene",
+    "group": "Tile rules",
+    "hidden": false
+  },
+  {
+    "qName": "tileScanner.and",
+    "id": "tileScanner_and",
+    "category": "scene",
+    "group": "Tile rules",
+    "hidden": false
+  },
+  {
+    "qName": "tileScanner.or",
+    "id": "tileScanner_or",
+    "category": "scene",
+    "group": "Tile rules",
+    "hidden": false
+  },
+  {
+    "qName": "tileScanner.setTileAtLocations",
+    "id": "tileScanner_setTileAtLocations",
+    "category": "scene",
+    "group": "Tile rules",
+    "hidden": false
+  },
+  {
+    "qName": "tileScanner.setWallAtLocations",
+    "id": "tileScanner_setWallAtLocations",
+    "category": "scene",
+    "group": "Tile rules",
+    "hidden": false
+  },
+  {
+    "qName": "tileScanner.filterLocations",
+    "id": "tileScanner_filterLocations",
+    "category": "scene",
+    "group": "Tile rules",
+    "hidden": false
+  },
+  {
+    "qName": "tileScanner.overlapsSprite",
+    "id": "tileScanner_overlapsSprite",
+    "category": "scene",
+    "group": "Tile rules",
+    "hidden": false
+  },
+  {
+    "qName": "tileScanner.indexOfLocation",
+    "id": "tileScanner_indexOfLocation",
+    "category": "scene",
+    "group": "Tile rules",
+    "hidden": false
+  },
+  {
+    "qName": "tileScanner.containsLocation",
+    "id": "tileScanner_containsLocation",
+    "category": "scene",
+    "group": "Tile rules",
+    "hidden": false
+  },
+  {
+    "qName": "tileScanner.calculateMetric",
+    "id": "tileScanner_calculateMetric",
+    "category": "scene",
+    "group": "Tile rules",
+    "hidden": false
+  },
+  {
+    "qName": "tileScanner.join",
+    "id": "tileScanner_joinLocations",
+    "category": "scene",
+    "group": "Tile rules",
+    "hidden": false
+  },
+  {
+    "qName": "tileScanner.deduplicate",
+    "id": "tileScanner_deduplicateLocations",
+    "category": "scene",
+    "group": "Tile rules",
+    "hidden": false
+  },
+  {
+    "qName": "tileScanner.sortByDistance",
+    "id": "tileScanner_sortByDistance",
+    "category": "scene",
+    "group": "Tile rules",
+    "hidden": false
+  },
+  {
+    "qName": "tileScanner.sortByColumnRow",
+    "id": "tileScanner_sortByColumnRow",
+    "category": "scene",
+    "group": "Tile rules",
+    "hidden": false
+  },
+  {
+    "qName": "tileScanner.createOverlapTester",
+    "id": "tileScanner_createOverlapTester",
+    "category": "scene",
+    "group": "Tile rules",
+    "hidden": false
+  },
+  {
+    "qName": "tileScanner.createOutlineSprite",
+    "id": "tileScanner_createOutlineSprite",
+    "category": "scene",
+    "group": "Tile rules",
+    "hidden": false
+  },
+  {
+    "qName": "tileScanner.updateTiles",
+    "id": "tileScanner_updateTiles",
+    "category": "scene",
+    "group": "Tile rules",
+    "hidden": false
+  },
+  {
+    "qName": "tileScanner.setOutlineColor",
+    "id": "tileScanner_setOutlineColor",
+    "category": "scene",
+    "group": "Tile rules",
+    "hidden": false
+  },
+  {
+    "qName": "tileScanner.setOutlineThickness",
+    "id": "tileScanner_setOutlineThickness",
+    "category": "scene",
+    "group": "Tile rules",
+    "hidden": false
+  },
+  {
+    "qName": "tileUtil.tilemapProperty",
+    "id": "tileUtil_tilemapProperty",
+    "category": "scene",
+    "group": "Tilemaps",
+    "hidden": false
+  },
+  {
+    "qName": "tileUtil._connectionKind",
+    "id": "tileUtil_connectionKind",
+    "category": "scene",
+    "group": "Tilemaps",
+    "hidden": false
+  },
+  {
+    "qName": "tileUtil.connectMaps",
+    "id": "tileUtil_connectMapById",
+    "category": "scene",
+    "group": "Tilemaps",
+    "hidden": false
+  },
+  {
+    "qName": "tileUtil.getConnectedMap",
+    "id": "tileUtil_getConnectedMap",
+    "category": "scene",
+    "group": "Tilemaps",
+    "hidden": false
+  },
+  {
+    "qName": "tileUtil.loadConnectedMap",
+    "id": "tileUtil_loadConnectedMap",
+    "category": "scene",
+    "group": "Tilemaps",
+    "hidden": false
+  },
+  {
+    "qName": "tileUtil.createSmallMap",
+    "id": "tileUtil_createSmallMap",
+    "category": "scene",
+    "group": "Tilemaps",
+    "hidden": false
+  },
+  {
+    "qName": "tileUtil.cloneMap",
+    "id": "tileUtil_cloneMap",
+    "category": "scene",
+    "group": "Tilemaps",
+    "hidden": false
+  },
+  {
+    "qName": "tileUtil.onMapLoaded",
+    "id": "tileUtil_onMapLoaded",
+    "category": "scene",
+    "group": "Tilemaps",
+    "hidden": false
+  },
+  {
+    "qName": "tileUtil.onMapUnloaded",
+    "id": "tileUtil_onMapUnloaded",
+    "category": "scene",
+    "group": "Tilemaps",
+    "hidden": false
+  },
+  {
+    "qName": "tileUtil.unloadTilemap",
+    "id": "tileUtil_unloadTilemap",
+    "category": "scene",
+    "group": "Tilemaps",
+    "hidden": false
+  },
+  {
+    "qName": "tileUtil.coverAllTiles",
+    "id": "tileUtil_coverAllTiles",
+    "category": "scene",
+    "group": "Tilemaps",
+    "hidden": false
+  },
+  {
+    "qName": "tileUtil.coverTile",
+    "id": "tileUtil_coverTile",
+    "category": "scene",
+    "group": "Tilemaps",
+    "hidden": false
+  },
+  {
+    "qName": "tileUtil.replaceAllTiles",
+    "id": "tileUtil_replaceAllTiles",
+    "category": "scene",
+    "group": "Tilemaps",
+    "hidden": false
+  },
+  {
+    "qName": "tileUtil.setWalls",
+    "id": "tileUtil_setWalls",
+    "category": "scene",
+    "group": "Tilemaps",
+    "hidden": false
+  },
+  {
+    "qName": "tileUtil.setTileAt",
+    "id": "tileUtil_setTileAt",
+    "category": "scene",
+    "group": "Tilemaps",
+    "hidden": false
+  },
+  {
+    "qName": "tileUtil.setWallAt",
+    "id": "tileUtil_setWallAt",
+    "category": "scene",
+    "group": "Tilemaps",
+    "hidden": false
+  },
+  {
+    "qName": "tileUtil.tileIs",
+    "id": "tileUtil_tileIs",
+    "category": "scene",
+    "group": "Tilemaps",
+    "hidden": false
+  },
+  {
+    "qName": "tileUtil.tileIsWall",
+    "id": "tileUtil_tileIsWall",
+    "category": "scene",
+    "group": "Tilemaps",
+    "hidden": false
+  },
+  {
+    "qName": "tileUtil.getTileImage",
+    "id": "tileUtil_getTileImage",
+    "category": "scene",
+    "group": "Tilemaps",
+    "hidden": false
+  },
+  {
+    "qName": "tileUtil.currentTilemap",
+    "id": "tileUtil_getLoadedMap",
+    "category": "scene",
+    "group": "Tilemaps",
+    "hidden": false
+  },
+  {
+    "qName": "tileUtil.centerCameraOnTile",
+    "id": "tileUtil_createCameraOnTile",
+    "category": "scene",
+    "group": "Tilemaps",
+    "hidden": false
+  },
+  {
+    "qName": "tileUtil.createSpritesOnTiles",
+    "id": "tileUtil_createSpritesOnTiles",
+    "category": "scene",
+    "group": "Tilemaps",
+    "hidden": false
+  },
+  {
+    "qName": "tileUtil.forEachTileInMap",
+    "id": "tileUtil_forEachTileInMap",
+    "category": "scene",
+    "group": "Tilemaps",
+    "hidden": false
+  },
+  {
+    "qName": "scene.aStar",
+    "id": "scene_aStar",
+    "category": "scene",
+    "group": "Pathfinding",
+    "hidden": false
+  },
+  {
+    "qName": "scene.followPath",
+    "id": "scene_followPath",
+    "category": "scene",
+    "group": "Pathfinding",
+    "hidden": false
+  },
+  {
+    "qName": "scene.spriteIsFollowingPath",
+    "id": "scene_spriteIsFollowingPath",
+    "category": "scene",
+    "group": "Pathfinding",
+    "hidden": false
+  },
+  {
+    "qName": "scene.spritePercentPathCompleted",
+    "id": "scene_spritePercentPathCompleted",
+    "category": "scene",
+    "group": "Pathfinding",
+    "hidden": false
+  },
+  {
+    "qName": "scene.onPathCompletion",
+    "id": "scene_onPathCompletion",
+    "category": "scene",
+    "group": "Pathfinding",
+    "hidden": false
+  },
+  {
+    "qName": "timer.after",
+    "id": "timer_after",
+    "category": "game",
+    "group": "Timers",
+    "hidden": false
+  },
+  {
+    "qName": "timer.background",
+    "id": "timer_background",
+    "category": "game",
+    "group": "Timers",
+    "hidden": true
+  },
+  {
+    "qName": "timer.debounce",
+    "id": "timer_debounce",
+    "category": "game",
+    "group": "Timers",
+    "hidden": false
+  },
+  {
+    "qName": "timer.throttle",
+    "id": "timer_throttle",
+    "category": "game",
+    "group": "Timers",
+    "hidden": false
+  },
+  {
+    "qName": "extraEffects.createTimeRange",
+    "id": "timeRangePicker",
+    "category": "extraEffects",
+    "hidden": true
+  },
+  {
+    "qName": "extraEffects.createPercentageRange",
+    "id": "percentRangePicker",
+    "category": "extraEffects",
+    "hidden": true
+  },
+  {
+    "qName": "extraEffects.createFullPresetsSpreadEffectData",
+    "id": "presetEffectPicker",
+    "category": "extraEffects",
+    "group": "Data",
+    "hidden": false
+  },
+  {
+    "qName": "extraEffects.createSingleColorSpreadEffectData",
+    "id": "createSingleColorSpreadEffectData",
+    "category": "extraEffects",
+    "group": "Data",
+    "hidden": false
+  },
+  {
+    "qName": "extraEffects.createSpreadEffectAt",
+    "id": "extraEffects_createSpreadEffectAt",
+    "category": "extraEffects",
+    "group": "Create",
+    "hidden": false
+  },
+  {
+    "qName": "extraEffects.createSpreadEffectOnAnchor",
+    "id": "createSpreadEffectOnAnchor",
+    "category": "extraEffects",
+    "group": "Create",
+    "hidden": false
+  },
+  {
+    "qName": "extraEffects.createCustomSpreadEffectData",
+    "id": "extraEffects_createCustomSpreadEffectData",
+    "category": "extraEffects",
+    "group": "Advanced Data",
+    "hidden": false
+  },
+  {
+    "qName": "extraEffects.createPresetColorTable",
+    "id": "presetColorTablePicker",
+    "category": "extraEffects",
+    "group": "Colors",
+    "hidden": false
+  },
+  {
+    "qName": "extraEffects.createPresetSizeTable",
+    "id": "presetSizeTablePicker",
+    "category": "extraEffects",
+    "group": "Sizes",
+    "hidden": false
+  },
+  {
+    "qName": "extraEffects.createShrinkingSizeTable",
+    "id": "shrinkingTablePicker",
+    "category": "extraEffects",
+    "group": "Sizes",
+    "hidden": false
+  },
+  {
+    "qName": "extraEffects.createGrowingSizeTable",
+    "id": "growingTablePicker",
+    "category": "extraEffects",
+    "group": "Sizes",
+    "hidden": false
+  },
+  {
+    "qName": "SpreadEffectData.setSpreadEffectDataColorLookupTable",
+    "id": "SpreadEffectData_setSpreadEffectDataColorLookupTable",
+    "category": "extraEffects",
+    "group": "Advanced Data",
+    "hidden": false
+  },
+  {
+    "qName": "SpreadEffectData.setSpreadEffectDataSizeLookupTable",
+    "id": "SpreadEffectData_setSpreadEffectDataSizeLookupTable",
+    "category": "extraEffects",
+    "group": "Advanced Data",
+    "hidden": false
+  },
+  {
+    "qName": "SpreadEffectData.setSpreadEffectDataMonoColor",
+    "id": "SpreadEffectData_setSpreadEffectDataMonoColor",
+    "category": "extraEffects",
+    "group": "Advanced Data",
+    "hidden": false
+  },
+  {
+    "qName": "mazes.Grid.build",
+    "id": "mazes_Grid_build",
+    "category": "scene",
+    "group": "Mazes",
+    "hidden": false
+  },
+  {
+    "qName": "mazes.Grid.buildImageBlocks",
+    "id": "mazes_Grid_buildImageBlocks",
+    "category": "scene",
+    "group": "Mazes",
+    "hidden": false
+  },
+  {
+    "qName": "mazes.Grid.buildTileMap",
+    "id": "mazes_Grid_buildMazeTilemap",
+    "category": "scene",
+    "group": "Mazes",
+    "hidden": false
+  },
+  {
+    "qName": "mazes.Grid.setSolutionCells",
+    "id": "mazes_DistancesGrid_setSolutionCells",
+    "category": "scene",
+    "group": "Mazes",
+    "hidden": false
+  },
+  {
+    "qName": "mazes.Grid.solve",
+    "id": "mazes_DistancesGrid_solve",
+    "category": "scene",
+    "group": "Mazes",
+    "hidden": false
+  },
+  {
+    "qName": "mazes.buildMaze",
+    "id": "mazes_buildMaze",
+    "category": "scene",
+    "group": "Mazes",
+    "hidden": false
+  },
+  {
+    "qName": "mazes.buildMazeTilemap",
+    "id": "mazes_buildMazeTilemap",
+    "category": "scene",
+    "group": "Mazes",
+    "hidden": false
+  },
+  {
+    "qName": "controller.combos.idToString",
+    "id": "buttonCombosIdToString",
+    "category": "controller",
+    "group": "Combos",
+    "hidden": false
+  },
+  {
+    "qName": "controller.combos.attachCombo",
+    "id": "buttonCombosAttach",
+    "category": "controller",
+    "group": "Combos",
+    "hidden": false
+  },
+  {
+    "qName": "controller.combos.attachSpecialCode",
+    "id": "buttonCombosSpecialAttach",
+    "category": "controller",
+    "group": "Combos",
+    "hidden": false
+  },
+  {
+    "qName": "controller.combos.detachCombo",
+    "id": "buttonCombosDetach",
+    "category": "controller",
+    "group": "Combos",
+    "hidden": false
+  },
+  {
+    "qName": "controller.combos.setTimeout",
+    "id": "buttonCombosTimeout",
+    "category": "controller",
+    "group": "Combos",
+    "hidden": false
+  },
+  {
+    "qName": "controller.combos.setTriggerType",
+    "id": "buttonCombosTriggerType",
+    "category": "controller",
+    "group": "Combos",
+    "hidden": false
+  },
+  {
+    "qName": "controller.combos.setExtendedComboMode",
+    "id": "buttonCombosSetExtendedComboMode",
+    "category": "controller",
+    "group": "Combos",
+    "hidden": false
+  },
+  {
+    "qName": "color.FadeEffect.startScreenEffect",
+    "id": "effectStartScreenFade",
+    "category": "scene",
+    "group": "Palette effects",
+    "hidden": false
+  },
+  {
+    "qName": "color.setPalette",
+    "id": "colorSetPalette",
+    "category": "scene",
+    "group": "Palette effects",
+    "hidden": false
+  },
+  {
+    "qName": "color.setColor",
+    "id": "colorSetColorAtIndex",
+    "category": "scene",
+    "group": "Palette effects",
+    "hidden": false
+  },
+  {
+    "qName": "color.__rgb",
+    "id": "colorsrgb__dup",
+    "category": "scene",
+    "group": "Palette effects",
+    "hidden": false
+  },
+  {
+    "qName": "color.__hsv",
+    "id": "colorshsv__dup",
+    "category": "scene",
+    "group": "Palette effects",
+    "hidden": false
+  },
+  {
+    "qName": "color.parseColorString",
+    "id": "parseColorString",
+    "category": "scene",
+    "group": "Palette effects",
+    "hidden": false
+  },
+  {
+    "qName": "color.clearFadeEffect",
+    "id": "colorClearFadeEffects",
+    "category": "scene",
+    "group": "Palette effects",
+    "hidden": false
+  },
+  {
+    "qName": "color.startFade",
+    "id": "colorStartFade",
+    "category": "scene",
+    "group": "Palette effects",
+    "hidden": false
+  },
+  {
+    "qName": "color.startFadeFromCurrent",
+    "id": "colorStartFadeFromCurrent",
+    "category": "scene",
+    "group": "Palette effects",
+    "hidden": false
+  },
+  {
+    "qName": "color.pauseUntilFadeDone",
+    "id": "colorPauseUntilFadeDone",
+    "category": "scene",
+    "group": "Palette effects",
+    "hidden": false
+  },
+  {
+    "qName": "lantern.startLanternEffect",
+    "id": "lantern_startLanternEffect",
+    "category": "scene",
+    "group": "Lighting",
+    "hidden": false
+  },
+  {
+    "qName": "lantern.stopLanternEffect",
+    "id": "lantern_stopLanternEffect",
+    "category": "scene",
+    "group": "Lighting",
+    "hidden": false
+  },
+  {
+    "qName": "lantern.setLightBandWidth",
+    "id": "lantern_setLightBandWidth",
+    "category": "scene",
+    "group": "Lighting",
+    "hidden": false
+  },
+  {
+    "qName": "lantern.setBreathingEnabled",
+    "id": "lantern_setBreathingEnabled",
+    "category": "scene",
+    "group": "Lighting",
+    "hidden": false
+  },
+  {
+    "qName": "multilights.toggleLighting",
+    "id": "multilights_toggleLighting",
+    "category": "scene",
+    "group": "Lighting",
+    "hidden": false
+  },
+  {
+    "qName": "multilights.bandWidthOf",
+    "id": "multilights_bandWidthOf",
+    "category": "scene",
+    "group": "Lighting",
+    "hidden": false
+  },
+  {
+    "qName": "multilights.removeLightSource",
+    "id": "multilights_removeLightSource",
+    "category": "scene",
+    "group": "Lighting",
+    "hidden": false
+  },
+  {
+    "qName": "multilights.addLightSource",
+    "id": "multilights_addLightSource",
+    "category": "scene",
+    "group": "Lighting",
+    "hidden": false
+  },
+  {
+    "qName": "multilights.addFlashLightSource",
+    "id": "multilights_addFlashLightSource",
+    "category": "scene",
+    "group": "Lighting",
+    "hidden": false
+  },
+  {
+    "qName": "multilights.flashlightSourceAttachedTo",
+    "id": "multilights_flashlightSourceAttachedTo",
+    "category": "scene",
+    "group": "Lighting",
+    "hidden": false
+  },
+  {
+    "qName": "music.convertRTTTLToMelody",
+    "id": "rttl_converttomelody",
+    "category": "music",
+    "group": "Ringtones",
+    "hidden": false
+  },
+  {
+    "qName": "blockSettings.writeNumber",
+    "id": "block_settings_write_number",
+    "category": "game",
+    "group": "Save data",
+    "hidden": false
+  },
+  {
+    "qName": "blockSettings.readNumber",
+    "id": "block_settings_read_number",
+    "category": "game",
+    "group": "Save data",
+    "hidden": false
+  },
+  {
+    "qName": "blockSettings.writeString",
+    "id": "block_settings_write_string",
+    "category": "game",
+    "group": "Save data",
+    "hidden": false
+  },
+  {
+    "qName": "blockSettings.readString",
+    "id": "block_settings_read_string",
+    "category": "game",
+    "group": "Save data",
+    "hidden": false
+  },
+  {
+    "qName": "blockSettings.writeNumberArray",
+    "id": "block_settings_write_number_array",
+    "category": "game",
+    "group": "Save data",
+    "hidden": false
+  },
+  {
+    "qName": "blockSettings.readNumberArray",
+    "id": "block_settings_read_number_array",
+    "category": "game",
+    "group": "Save data",
+    "hidden": false
+  },
+  {
+    "qName": "blockSettings.remove",
+    "id": "block_settings_remove",
+    "category": "game",
+    "group": "Save data",
+    "hidden": false
+  },
+  {
+    "qName": "blockSettings.exists",
+    "id": "block_settings_exists",
+    "category": "game",
+    "group": "Save data",
+    "hidden": false
+  },
+  {
+    "qName": "blockSettings.list",
+    "id": "block_settings_lists",
+    "category": "game",
+    "group": "Save data",
+    "hidden": false
+  },
+  {
+    "qName": "blockSettings.clear",
+    "id": "block_settings_clear",
+    "category": "game",
+    "group": "Save data",
+    "hidden": false
+  },
+  {
+    "qName": "SoundBuffer.play",
+    "id": "play_method",
+    "category": "music",
+    "group": "Synthesizer",
+    "hidden": false
+  },
+  {
+    "qName": "SoundBuffer.playUntilDone",
+    "id": "play_until_done_method",
+    "category": "music",
+    "group": "Synthesizer",
+    "hidden": false
+  },
+  {
+    "qName": "SoundBuffer.loop",
+    "id": "loop_method",
+    "category": "music",
+    "group": "Synthesizer",
+    "hidden": false
+  },
+  {
+    "qName": "SoundBuffer.stop",
+    "id": "stop_method",
+    "category": "music",
+    "group": "Synthesizer",
+    "hidden": false
+  },
+  {
+    "qName": "soundEffects.createSound",
+    "id": "create_sound",
+    "category": "music",
+    "group": "Synthesizer",
+    "hidden": false
+  },
+  {
+    "qName": "soundEffects.waveNumber",
+    "id": "waveNumber",
+    "category": "music",
+    "group": "Synthesizer",
+    "hidden": false
+  },
+  {
+    "qName": "StatusBarKind._statusbarKind",
+    "id": "statusbars_kind",
+    "category": "sprites",
+    "group": "Status bars",
+    "hidden": true
+  },
+  {
+    "qName": "StatusBarSprite.attachToSprite",
+    "id": "statusbars_attachToSprite",
+    "category": "sprites",
+    "group": "Status bars",
+    "hidden": false
+  },
+  {
+    "qName": "StatusBarSprite.spriteAttachedTo",
+    "id": "statusbars_attachSpriteGetter",
+    "category": "sprites",
+    "group": "Status bars",
+    "hidden": false
+  },
+  {
+    "qName": "StatusBarSprite.setColor",
+    "id": "statusbars_setColor",
+    "category": "sprites",
+    "group": "Status bars",
+    "hidden": false
+  },
+  {
+    "qName": "StatusBarSprite.setBarBorder",
+    "id": "statusbars_setBorder",
+    "category": "sprites",
+    "group": "Status bars",
+    "hidden": false
+  },
+  {
+    "qName": "StatusBarSprite.setLabel",
+    "id": "statusbar_setLabel",
+    "category": "sprites",
+    "group": "Status bars",
+    "hidden": false
+  },
+  {
+    "qName": "StatusBarSprite.setStatusBarFlag",
+    "id": "statusbars_setFlag",
+    "category": "sprites",
+    "group": "Status bars",
+    "hidden": false
+  },
+  {
+    "qName": "StatusBarSprite.setBarSize",
+    "id": "statusbars_setBarSize",
+    "category": "sprites",
+    "group": "Status bars",
+    "hidden": false
+  },
+  {
+    "qName": "StatusBarSprite.positionDirection",
+    "id": "statusbars_positionNextToSprite",
+    "category": "sprites",
+    "group": "Status bars",
+    "hidden": false
+  },
+  {
+    "qName": "StatusBarSprite.setOffsetPadding",
+    "id": "setPaddingOffset",
+    "category": "sprites",
+    "group": "Status bars",
+    "hidden": false
+  },
+  {
+    "qName": "statusbars.create",
+    "id": "statusbars_create",
+    "category": "sprites",
+    "group": "Status bars",
+    "hidden": false
+  },
+  {
+    "qName": "statusbars.getStatusBarAttachedTo",
+    "id": "statusbars_spriteStatusBarIsAttachedTo",
+    "category": "sprites",
+    "group": "Status bars",
+    "hidden": false
+  },
+  {
+    "qName": "statusbars.onZero",
+    "id": "statusbars_onZero",
+    "category": "sprites",
+    "group": "Status bars",
+    "hidden": false
+  },
+  {
+    "qName": "statusbars.onStatusReached",
+    "id": "statusbars_onStatusReached",
+    "category": "sprites",
+    "group": "Status bars",
+    "hidden": false
+  },
+  {
+    "qName": "statusbars.onDisplayUpdated",
+    "id": "statusbars_postprocessDisplay",
+    "category": "sprites",
+    "group": "Status bars",
+    "hidden": false
+  },
+  {
+    "qName": "statusbars.allOfKind",
+    "id": "statusbars_arrayOfKind",
+    "category": "sprites",
+    "group": "Status bars",
+    "hidden": false
+  }
+]

@@ -1,0 +1,60 @@
+{
+  "arcade-text": {
+    "create": "Make a text label that you can move like a sprite. Use its text blocks to change the words later.",
+    "setText": "Change the words on this label. Its picture resizes to fit the new text.",
+    "setMaxFontHeight": "Choose how tall the label's letters can be, in pixels. This uses Arcade's built-in fonts.",
+    "setBorder": "Add a colored border and space around this text label.",
+    "setOutline": "Draw a colored line around the letters so they stand out from the background.",
+    "setIcon": "Put a small picture beside this label's words."
+  },
+  "arcade-timers": {
+    "after": "Run the code inside after this many milliseconds. The rest of your game keeps running while it waits.",
+    "debounce": "Wait until calls with this name stop for this long, then run the code once. Useful for finishing a repeated action.",
+    "throttle": "Run the code now, then ignore more calls with the same name until this wait time ends. Useful for a firing cooldown."
+  },
+  "pxt-lantern": {
+    "startLanternEffect": "Darken the room and keep a circle of light around this sprite.",
+    "stopLanternEffect": "Remove the single lantern effect and show the room normally again.",
+    "setLightBandWidth": "Choose how wide each ring of the lantern's light is, in pixels.",
+    "setBreathingEnabled": "Make the lantern's light gently grow and shrink, or keep it steady.",
+    "toggleLighting": "Turn room lighting on or off. Add light sources to sprites to light up parts of the dark room.",
+    "addLightSource": "Make a circle of light follow this sprite. Turn lighting on to see the dark areas around it.",
+    "removeLightSource": "Stop this sprite from lighting up the room.",
+    "bandWidthOf": "Change how quickly this sprite's light gets darker toward its edge. A larger number makes a wider light.",
+    "addFlashLightSource": "Attach a cone of light to this sprite. Choose its direction, distance and width.",
+    "flashlightSourceAttachedTo": "Get the flashlight attached to this sprite so you can change it."
+  },
+  "arcade-block-objects": {
+    "blockObject.create": "Make an empty object to keep related game information together.",
+    "storeOnSprite": "Attach this object to a sprite so its information travels with the character or item.",
+    "getStoredObject": "Get the object previously attached to this sprite."
+  },
+  "arcade-mini-menu": {
+    "insertMenuItem": "Add a new choice at the end of this menu. Expand the block to choose a position; zero is the first choice."
+  },
+  "pxt-sound-effects": {
+    "createSound": "Make a retro sound that changes pitch and volume over time. Duration is in milliseconds; pitch is in hertz.",
+    "play": "Play this sound effect and let the rest of your code continue.",
+    "playUntilDone": "Play this sound effect and wait until it finishes before continuing.",
+    "loop": "Repeat this sound effect until its stop block is used.",
+    "stop": "Stop this sound effect's repeating playback."
+  },
+  "pxt-raycasting": {
+    "setViewMode": "Choose the normal top-down game view or a first-person view of your tilemap. The first-person renderer starts only when its blocks are used.",
+    "getRenderSpriteVariable": "Get the character whose eyes form the first-person camera. Place and move it with the usual sprite blocks.",
+    "isViewMode": "True when the game is showing this type of view.",
+    "setViewAngleInDegree": "Turn the first-person camera to this angle, in degrees. Zero looks right and 90 looks down."
+  },
+  "arcade-shadowcasting": {
+    "setAnchor": "Choose the character whose view lights the map. Wall tiles hide the areas behind them.",
+    "setShadowEnabled": "Turn wall-blocking shadows on or off. Set an anchor character and tilemap first.",
+    "setShadowColor": "Choose the color used for hidden parts of the map when the shadow mode is fill."
+  },
+  "pxt-status-bar": {
+    "statusbars.create": "Make a sprite that displays a value as a bar. Attach it to a character for health or energy, then change its value and maximum.",
+    "StatusBarSprite.setColor": "Choose the colors for the filled and empty parts of this bar. The value and maximum decide how much is filled.",
+    "StatusBarSprite.setBarBorder": "Draw a border around this bar. Choose its thickness in pixels and its color.",
+    "StatusBarSprite.setLabel": "Show this short label beside the bar, in the chosen color.",
+    "StatusBarSprite.setBarSize": "Change the width and height of this bar, in pixels."
+  }
+}

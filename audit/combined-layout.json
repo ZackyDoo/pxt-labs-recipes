@@ -1,0 +1,18 @@
+[
+  {
+    "owner": "mazes.Grid",
+    "category": "scene"
+  },
+  {
+    "owner": "lightsource.FlashlightLightSource",
+    "category": "scene"
+  },
+  {
+    "owner": "SoundBuffer",
+    "category": "music"
+  },
+  {
+    "owner": "StatusBarSprite",
+    "category": "sprites"
+  }
+]

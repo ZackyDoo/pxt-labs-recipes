@@ -5,7 +5,7 @@ test('every Labs block has a tooltip, a unique ID and an existing Arcade categor
  assert.ok(result.success,JSON.stringify(result.diagnostics));
  const api=pxtc.getApiInfo(result.ast,options.jres),info=pxtc.getBlocksInfo(api);
  const blocks=info.blocks.filter(b=>(b.attributes.blockId||'').startsWith('labs_'));
- assert.equal(blocks.length,55);
+ assert.equal(blocks.length,56);
  const seen=new Set(),categories=new Set();
  for(const block of blocks){const a=block.attributes;assert.ok(!seen.has(a.blockId),a.blockId);seen.add(a.blockId);
   assert.ok(a.jsDoc?.trim().length>35,block.qName+' needs a useful tooltip');

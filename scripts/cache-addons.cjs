@@ -16,6 +16,7 @@ async function pool(items, action) {
 }
 async function get(pack, file) {
     if (!file || path.isAbsolute(file) || file.split(/[\\/]/).includes('..')) throw Error('Invalid upstream path');
+    if (pack.id === 'pxt-raycasting') return fs.readFileSync(path.join(root, 'libs/raycasting', file), 'utf8');
     const local = path.join(directory, pack.id, pack.commit, file);
     if (fs.existsSync(local)) return fs.readFileSync(local, 'utf8');
     const url = `https://raw.githubusercontent.com/${pack.repo}/${pack.commit}/${file}`;
@@ -50,7 +51,18 @@ async function main() {
         packages[pack.id] = files;
     }
     await pool(jobs, job => job());
-    const output = {schema: 1, revisions: Object.fromEntries(selected.map(p => [p.id, p.commit])), packages};
+    const revisions = Object.fromEntries(selected.map(p => [p.id, core.dependencies[p.id].split('#')[1]]));
+    for (const relative of ['libs/inventory', 'addons/inventory-menu']) {
+        const folder = path.join(root, relative);
+        if (!fs.existsSync(path.join(folder, 'pxt.json'))) continue;
+        const config = JSON.parse(fs.readFileSync(path.join(folder, 'pxt.json'), 'utf8'));
+        const files = {};
+        for (const file of config.files) files[file] = fs.readFileSync(path.join(folder, file), 'utf8');
+        files['pxt.json'] = JSON.stringify({...config, dependencies: Object.fromEntries(Object.keys(config.dependencies).map(id => [id, '*']))});
+        packages[config.name] = files;
+        revisions[config.name] = 'v' + core.version;
+    }
+    const output = {schema: 1, revisions, packages};
     fs.writeFileSync(path.join(root, 'built/super-packages.json'), JSON.stringify(output));
     console.log(`Cached ${selected.length} original upstream packages for offline tests.`);
 }

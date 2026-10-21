@@ -18,7 +18,7 @@ async function compileProgram(source, extras = {}) {
         offlineConfig.dependencies[id] = '*';
     }
     const extension = { 'pxt.json': JSON.stringify(offlineConfig) };
-    for (const file of config.files) extension[file] = fs.readFileSync(path.join(root, file), 'utf8');
+    for (const file of config.files) extension[file] = extras.omitToolbox && file === 'toolbox.d.ts' ? '' : fs.readFileSync(path.join(root, file), 'utf8');
     target.bundledpkgs[config.name] = extension;
     Object.assign(target.bundledpkgs, upstream.packages);
     Object.assign(target.bundledpkgs, extras.packages || {});

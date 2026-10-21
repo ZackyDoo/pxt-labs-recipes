@@ -1,9 +1,10 @@
-# Included tools and optional renderers
+# Included tool libraries
 
-The main Labs install includes 29 of these original packages automatically.
-Only **pxt-raycasting**, **arcade-split-screen**, and **arcade-shadowcasting**
-remain optional. Install an optional renderer by pasting its GitHub URL into
-Extensions. The table records all 32 reviewed tools and their audited revisions.
+The main Labs install includes all 32 tools automatically. 31 are original
+GitHub dependencies; raycasting uses the site's lazy-start compatibility
+adaptation, preserving its public API and block IDs. The table records the
+reviewed upstream revisions; raycasting's changes are documented in
+`libs/raycasting/README.md`.
 The combined 32-package compile had no duplicate block IDs. This is compile/API
 evidence, not exhaustive runtime certification.
 
@@ -44,6 +45,6 @@ evidence, not exhaustive runtime certification.
 
 ## Compatibility boundaries
 
-Raycasting, split screen, shadowcasting, screen transitions, and camera offset can each take responsibility for drawing or camera behavior. A clean compile does not make conflicting rendering modes interchangeable. Add these deliberately. Original add-ons keep their own categories and documentation; some upstream blocks lack hover documentation. Every Labs core block has a tooltip.
+Raycasting, split screen, shadowcasting, screen transitions, and camera offset can each take responsibility for drawing or camera behavior. A clean compile does not make conflicting rendering modes interchangeable. Activate one primary renderer/camera system per scene. Toolbox metadata follows the site's category/group layout and supplies hover explanations without copying the 31 upstream implementations.
 
 Use the original dependency rather than a second copied version. The site had renamed/adapted several APIs; migrate JavaScript calls to the original API where necessary. Existing Labs inventory calls become `labsInventory.*`.

@@ -3,13 +3,19 @@
 This repository owns the standalone extension. The site continues in its own
 repository; changes here do not modify or deploy the site.
 
-Version 0.3.0 makes the main package a one-install 2D toolkit. Its 29 upstream
+Version 0.4.0 includes all 32 tools, the site-style metadata layer, shared inventory
+and its menu, and lazy-start raycasting. Read `audit/compatibility.md` before
+changing package identities or generated declarations. Regenerate metadata with
+`npm run build:toolbox` after changing a pinned API. Preserve the conventional
+dependency IDs so ordinary graphs reuse shared implementations.
+
+Version 0.3.0 introduced a one-install 2D toolkit. Its 29 upstream
 dependencies are pinned to the audited commits in `audit/addons.json`.
 Run `npm run cache:addons` before compiler tests; this downloads original source
 into ignored `built/` files for offline compilation. The test host normalizes
 dependency locators only in that offline fixture. Student projects use the real
 GitHub dependencies in pxt.json. Raycasting, split screen, and shadowcasting stay
-optional. Do not replace original packages with copied vendor implementations.
+optional in that historical release. Do not copy the other 31 implementations.
 
 Version 0.2.0 imports the custom runtime from site commit
 `365800a` (compact Donkey Kong platform tools), adds Labs-specific toolbox
@@ -34,7 +40,7 @@ is introduced, synchronization is a deliberate maintenance step.
 
 ## Validate a change
 
-1. Run `npm ci --ignore-scripts --omit=optional`, `npm test`, and `npm run test:public`.
+1. Run `npm ci --ignore-scripts --omit=optional`, `npm run cache:addons`, `npm test`, and `npm run test:public`.
 2. Install the repository URL into a fresh project on public MakeCode Arcade.
 3. Try both examples, use the simulator controls, and switch between Blocks
    and JavaScript. Confirm native Labs blocks remain editable.

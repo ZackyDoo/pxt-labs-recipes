@@ -1,6 +1,6 @@
 {
   "name": "labs-recipes",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Labs game toolkit: movement, combat, platforms, animation, world, camera, HUD, inventory, achievements, random, and sight.",
   "license": "MIT",
   "dependencies": {
@@ -33,14 +33,19 @@
     "pxt-status-bar": "github:jwunderl/pxt-status-bar#917b24b4a9b61b581734b2d44cd418f211a55586",
     "arcade-state-transitions": "github:riknoll/arcade-state-transitions#a76e2753327c5361a35279a38ad496e72ee88a0f",
     "arcade-tile-scanner": "github:riknoll/arcade-tile-scanner#00657c44223b7d5c0ed46cf7b0569b556ec3950f",
-    "arcade-sprite-util": "github:jwunderl/arcade-sprite-util#6b20196a56d96a715169b50e59cc9f5d0bfd979a"
+    "arcade-sprite-util": "github:jwunderl/arcade-sprite-util#6b20196a56d96a715169b50e59cc9f5d0bfd979a",
+    "arcade-split-screen": "github:riknoll/arcade-split-screen#2d96b423875fe98f9fa7f41d8b8456e2ef3ffbac",
+    "arcade-shadowcasting": "github:riknoll/arcade-shadowcasting#ae9341760b393a8a99a62020042faca5ad982833",
+    "pxt-raycasting": "github:ZackyDoo/pxt-labs-recipes/libs/raycasting#v0.4.0",
+    "labs-inventory-menu": "github:ZackyDoo/pxt-labs-recipes/addons/inventory-menu#v0.4.0"
   },
   "files": [
     "README.md",
     "recipes.ts",
     "classic.ts",
     "shapes.ts",
-    "toolkit.ts"
+    "toolkit.ts",
+    "toolbox.d.ts"
   ],
   "testFiles": [
     "test.ts"
