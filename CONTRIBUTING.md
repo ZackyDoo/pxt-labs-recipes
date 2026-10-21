@@ -3,6 +3,13 @@
 This repository owns the standalone extension. The site continues in its own
 repository; changes here do not modify or deploy the site.
 
+Version 0.2.0 imports the custom runtime from site commit
+`365800a` (compact Donkey Kong platform tools), adds Labs-specific toolbox
+categories and tooltip coverage, and isolates the inventory menu as an optional
+add-on. Do not copy the site's 32 adapted vendor packages into core: use the
+original extensions as dependencies so students can install them normally.
+The core inventory namespace is `labsInventory`; block IDs stay unchanged.
+
 ## Origin and synchronization
 
 Initial extraction: `ZackyDoo/LabsCode` commit

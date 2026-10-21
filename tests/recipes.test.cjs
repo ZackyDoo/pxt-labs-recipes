@@ -107,4 +107,3 @@ test('Damage respects invulnerability and can resume after the timer', () => {
     assert.equal(r.labs.damage(s, 1, 500), true);
     assert.equal(r.labs.health(s), 1);
 });
-

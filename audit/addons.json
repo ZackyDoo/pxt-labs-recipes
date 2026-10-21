@@ -1,0 +1,517 @@
+[
+  {
+    "id": "arcade-sprite-data",
+    "repo": "microsoft/arcade-sprite-data",
+    "commit": "e2076e2de18addb70caf539577a9b28a7dec9a80",
+    "description": "Remember numbers, text, pictures and other information on each sprite.",
+    "compile": true,
+    "diagnostics": [],
+    "blocks": 12,
+    "missingTooltips": []
+  },
+  {
+    "id": "arcade-timers",
+    "repo": "microsoft/arcade-timers",
+    "commit": "2ffa4cec76a5587cbe177a70d0958bdd14b85e73",
+    "description": "Schedule actions, wait for repeated input to settle, and limit how often actions happen.",
+    "compile": true,
+    "diagnostics": [],
+    "blocks": 4,
+    "missingTooltips": []
+  },
+  {
+    "id": "arcade-text",
+    "repo": "microsoft/arcade-text",
+    "commit": "fa2439314c6633943666a763fdae32a5c67a9ae8",
+    "description": "Make labels that behave like sprites, with borders, outlines and icons.",
+    "compile": true,
+    "diagnostics": [],
+    "blocks": 6,
+    "missingTooltips": [
+      "TextSprite.setMaxFontHeight",
+      "TextSprite.setIcon",
+      "TextSprite.setText",
+      "TextSprite.setBorder",
+      "TextSprite.setOutline",
+      "textsprite.create"
+    ]
+  },
+  {
+    "id": "arcade-tile-util",
+    "repo": "microsoft/arcade-tile-util",
+    "commit": "43ec28517b6edce32ab6bb59097bdc8ca148001f",
+    "description": "Copy, inspect and transform maps, swap tiles, and connect rooms.",
+    "compile": true,
+    "diagnostics": [],
+    "blocks": 23,
+    "missingTooltips": []
+  },
+  {
+    "id": "arcade-character-animations",
+    "repo": "microsoft/arcade-character-animations",
+    "commit": "7b40150c721eef4e11ef0aff247deedc266d292e",
+    "description": "Choose walking, facing and jumping animations automatically from simple rules.",
+    "compile": true,
+    "diagnostics": [],
+    "blocks": 13,
+    "missingTooltips": []
+  },
+  {
+    "id": "arcade-tilemap-a-star",
+    "repo": "jwunderl/arcade-tilemap-a-star",
+    "commit": "cb98c9eb79f085dcce133249fb2b22e7923e8c29",
+    "description": "Find routes around walls and send characters along them.",
+    "compile": true,
+    "diagnostics": [],
+    "blocks": 5,
+    "missingTooltips": []
+  },
+  {
+    "id": "arcade-background-scroll",
+    "repo": "microsoft/arcade-background-scroll",
+    "commit": "95c6a26111b371f066f676825b737b3a60586aab",
+    "description": "Scroll background layers at different speeds for depth.",
+    "compile": true,
+    "diagnostics": [],
+    "blocks": 9,
+    "missingTooltips": []
+  },
+  {
+    "id": "pxt-settings-blocks",
+    "repo": "microsoft/pxt-settings-blocks",
+    "commit": "068d05d80a063b04d373bf9b411af45201d7ce7a",
+    "description": "Save progress on this browser or device and read it next time.",
+    "compile": true,
+    "diagnostics": [],
+    "blocks": 10,
+    "missingTooltips": []
+  },
+  {
+    "id": "pxt-button-combos",
+    "repo": "jwunderl/pxt-button-combos",
+    "commit": "acd196909d79fc3c3c25537bc8482e5379b81168",
+    "description": "Recognize sequences of button presses for special moves or rhythm games.",
+    "compile": true,
+    "diagnostics": [],
+    "blocks": 7,
+    "missingTooltips": []
+  },
+  {
+    "id": "arcade-grid",
+    "repo": "microsoft/arcade-grid",
+    "commit": "bf07587775af502687e8a6cd6ec22b4b1f81635c",
+    "description": "Move pieces between grid cells and find which sprites occupy a cell.",
+    "compile": true,
+    "diagnostics": [],
+    "blocks": 19,
+    "missingTooltips": [
+      "grid.numColumns",
+      "grid.numRows",
+      "grid.place",
+      "grid.getLocation",
+      "grid.add",
+      "grid.move",
+      "grid.swap",
+      "grid.getSprites",
+      "grid.moveWithButtons",
+      "grid.rowSprites",
+      "grid.colSprites",
+      "grid._gridDirectionEditor",
+      "grid.allSprites",
+      "grid.lineAdjacentSprites",
+      "grid.spriteRow",
+      "grid.spriteCol",
+      "grid.snap",
+      "grid.remove",
+      "grid.lineAdjacentLocations"
+    ]
+  },
+  {
+    "id": "arcade-mini-menu",
+    "repo": "riknoll/arcade-mini-menu",
+    "commit": "f57fa4387ebd1b2aff28faa807cc04078c7ad39e",
+    "description": "Create selectable menus, grids of items, icons and scrolling choices.",
+    "compile": true,
+    "diagnostics": [],
+    "blocks": 25,
+    "missingTooltips": [
+      "miniMenu.MenuItem.setText",
+      "miniMenu.MenuItem.getText",
+      "miniMenu.MenuItem.setIcon",
+      "miniMenu.MenuItem.getIcon",
+      "miniMenu.MenuItem.setDisabled",
+      "miniMenu.MenuItem.isDisabled",
+      "miniMenu.getMenuItem",
+      "miniMenu.getMenuItems",
+      "miniMenu.removeMenuItem",
+      "miniMenu.insertMenuItem"
+    ]
+  },
+  {
+    "id": "arcade-story",
+    "repo": "microsoft/arcade-storytelling",
+    "commit": "d21b941a0c936a7ee1d4f0c311ecbac19bc9d67f",
+    "description": "Build dialogue, player choices and cutscenes with coordinated character movement.",
+    "compile": true,
+    "diagnostics": [],
+    "blocks": 32,
+    "missingTooltips": [
+      "story.Script.addLineToCurrentPage",
+      "story.Script.newPage",
+      "story.Script.setColors",
+      "story.Script.setPagePauseLength",
+      "story.Script.setRelativeToCamera",
+      "story.createEmptyScript",
+      "story.createScript",
+      "story.printScript",
+      "story.spriteSayScript",
+      "story.queueStoryPart",
+      "story.clearQueuedStoryParts",
+      "story.pushScene",
+      "story.popScene",
+      "story.clearScene",
+      "story.startConveration",
+      "story.cancelCurrentConversation"
+    ]
+  },
+  {
+    "id": "arcade-block-objects",
+    "repo": "microsoft/arcade-block-objects",
+    "commit": "f486ac1d4dcc096b9297174f97f8cdef1576c7ff",
+    "description": "Group related game information in reusable objects.",
+    "compile": true,
+    "diagnostics": [],
+    "blocks": 55,
+    "missingTooltips": [
+      "blockObject.create",
+      "blockObject.storeOnSprite",
+      "blockObject.getStoredObject",
+      "blockObject._numProperty",
+      "blockObject._numArrayProperty",
+      "blockObject._boolProperty",
+      "blockObject._boolArrayProperty",
+      "blockObject._strProperty",
+      "blockObject._strArrayProperty",
+      "blockObject._spriteProperty",
+      "blockObject._spriteArrayProperty",
+      "blockObject._imageProperty",
+      "blockObject._imageArrayProperty",
+      "blockObject._locProperty",
+      "blockObject._locArrayProperty",
+      "blockObject._anyProperty"
+    ]
+  },
+  {
+    "id": "pxt-color",
+    "repo": "jwunderl/pxt-color",
+    "commit": "afc45ae5fa6271bfb2021a3664a4c330c227fa10",
+    "description": "Fade between palettes and change game colors over time.",
+    "compile": true,
+    "diagnostics": [],
+    "blocks": 10,
+    "missingTooltips": []
+  },
+  {
+    "id": "pxt-lantern",
+    "repo": "felixtsu/pxt-lantern",
+    "commit": "81ad193e97168c3014e7bf4e79af582809765ef0",
+    "description": "Darken a room and attach moving lights to characters.",
+    "compile": true,
+    "diagnostics": [],
+    "blocks": 13,
+    "missingTooltips": [
+      "lantern.startLanternEffect",
+      "lantern.stopLanternEffect",
+      "lantern.setLightBandWidth",
+      "lantern.setBreathingEnabled",
+      "multilights.toggleLighting",
+      "multilights.bandWidthOf",
+      "multilights.removeLightSource",
+      "multilights.addLightSource",
+      "multilights.addFlashLightSource",
+      "multilights.flashlightSourceAttachedTo"
+    ]
+  },
+  {
+    "id": "arcade-split-screen",
+    "repo": "riknoll/arcade-split-screen",
+    "commit": "2d96b423875fe98f9fa7f41d8b8456e2ef3ffbac",
+    "description": "Give local players separate camera views in the same game.",
+    "compile": true,
+    "diagnostics": [],
+    "blocks": 20,
+    "missingTooltips": [
+      "splitScreen._cameraShadow",
+      "splitScreen._cameraRegionShadow",
+      "splitScreen.setSplitScreenZIndex",
+      "splitScreen.getSprite",
+      "splitScreen.getCameraProperty",
+      "splitScreen.setRenderSize",
+      "splitScreen.createCameraView",
+      "splitScreen.cameraViewFollow",
+      "splitScreen.centerCameraViewAt",
+      "splitScreen.shakeCameraView",
+      "splitScreen.cameraViewSetZIndex",
+      "splitScreen.getCameraViewProperty",
+      "splitScreen.setCameraViewBorderColor"
+    ]
+  },
+  {
+    "id": "arcade-extension-utils",
+    "repo": "riknoll/arcade-extension-utils",
+    "commit": "55ede559e657d0563256acd518e85e330c34cc72",
+    "description": "Shared support for screen effects and split-screen.",
+    "compile": true,
+    "diagnostics": [],
+    "blocks": 0,
+    "missingTooltips": []
+  },
+  {
+    "id": "extra-effects",
+    "repo": "alexszeto/extra-effects",
+    "commit": "e2ab8e6d85d28bb1ae896619cb14ec70154f137f",
+    "description": "Design particle bursts, trails and effects with custom shapes and colors.",
+    "compile": true,
+    "diagnostics": [],
+    "blocks": 15,
+    "missingTooltips": [
+      "SpreadEffectData.setSpreadEffectDataColorLookupTable",
+      "SpreadEffectData.setSpreadEffectDataSizeLookupTable",
+      "SpreadEffectData.setSpreadEffectDataMonoColor"
+    ]
+  },
+  {
+    "id": "arcade-screen-transitions",
+    "repo": "riknoll/arcade-screen-transitions",
+    "commit": "b3b2731c5a90fb8d5f5bf35eac3985ce984da488",
+    "description": "Reveal a new scene with wipes, shapes and screen transitions.",
+    "compile": true,
+    "diagnostics": [],
+    "blocks": 9,
+    "missingTooltips": [
+      "screenTransitions._transition",
+      "screenTransitions.imageTransition",
+      "screenTransitions.startTransition",
+      "screenTransitions.showTransitionAtPercent",
+      "screenTransitions.clearScreenTransition",
+      "screenTransitions.setZ",
+      "screenTransitions.setSpriteZ",
+      "screenTransitions.changeSpriteZ",
+      "screenTransitions.setScreenTransitionDirection"
+    ]
+  },
+  {
+    "id": "pxt-arcade-mazes",
+    "repo": "robo-technical-group/pxt-arcade-mazes",
+    "commit": "7eb4c0d0588ac82a5fa1e56f8394bc14cdca6fa9",
+    "description": "Generate connected random mazes and inspect their passages.",
+    "compile": true,
+    "diagnostics": [],
+    "blocks": 8,
+    "missingTooltips": [
+      "mazes.buildMaze",
+      "mazes.buildMazeTilemap"
+    ]
+  },
+  {
+    "id": "arcade-sprite-events",
+    "repo": "riknoll/arcade-sprite-events",
+    "commit": "dc93eec8412053ebbd2b8f01cf5b6ae285d28900",
+    "description": "React when sprites enter or leave overlaps, walls and screen boundaries.",
+    "compile": true,
+    "diagnostics": [],
+    "blocks": 8,
+    "missingTooltips": [
+      "events.spriteEvent",
+      "events.tileEvent",
+      "events.wallEvent",
+      "events.regionEvent",
+      "events.createRegionFromCoordinates",
+      "events.createRegionFromLocations",
+      "events.simpleWallCondition",
+      "events.wallCondition"
+    ]
+  },
+  {
+    "id": "arcade-camera-offset",
+    "repo": "riknoll/arcade-camera-offset",
+    "commit": "50dcab790691a38799aa99390f9cced2d62fbc21",
+    "description": "Follow a character while looking ahead or keeping space for the HUD.",
+    "compile": true,
+    "diagnostics": [],
+    "blocks": 1,
+    "missingTooltips": [
+      "cameraOffsetScene.cameraFollowWithOffset"
+    ]
+  },
+  {
+    "id": "arcade-custom-instruments",
+    "repo": "riknoll/arcade-custom-instruments",
+    "commit": "6f81814d7d77a1ac7b97e4d631cbbc3654f2ec64",
+    "description": "Build instruments and drum sounds for Arcade songs.",
+    "compile": true,
+    "diagnostics": [],
+    "blocks": 12,
+    "missingTooltips": [
+      "customInstruments.makeSongWritable",
+      "customInstruments.setWaveform",
+      "customInstruments.setOctave",
+      "customInstruments.setVolume",
+      "customInstruments.setAmpEnvelopeTime",
+      "customInstruments.setAmpEnvelopeSustain",
+      "customInstruments.setTremolo",
+      "customInstruments.setPitchEnvelopeAmount",
+      "customInstruments.setPitchEnvelopeTime",
+      "customInstruments.setPitchEnvelopeSustain",
+      "customInstruments.setVibrato",
+      "customInstruments._instrumentId"
+    ]
+  },
+  {
+    "id": "pxt-sound-effects",
+    "repo": "klausw3/pxt-sound-effects",
+    "commit": "3dc538d91c9436e7e946ba7fe9fe2ee279dd9494",
+    "description": "Create layered retro sound effects with detailed envelopes and wave shapes.",
+    "compile": true,
+    "diagnostics": [],
+    "blocks": 11,
+    "missingTooltips": [
+      "soundEffects.waveNumber"
+    ]
+  },
+  {
+    "id": "pxt-rtttl",
+    "repo": "pelikhan/pxt-rtttl",
+    "commit": "8680dd76fccc2988554e32dbbc38c297d4f4a09d",
+    "description": "Play a tune stored as compact ringtone text.",
+    "compile": true,
+    "diagnostics": [],
+    "blocks": 1,
+    "missingTooltips": []
+  },
+  {
+    "id": "arcade-overworld",
+    "repo": "riknoll/arcade-overworld",
+    "commit": "3c6e6c259d75e9f910e70c221cecc7174bbc5067",
+    "description": "Organize many maps into a world, move through exits and keep room state.",
+    "compile": true,
+    "diagnostics": [],
+    "blocks": 26,
+    "missingTooltips": [
+      "overworld.setOverworld16",
+      "overworld.setOverworld8",
+      "overworld.setPlayerSprite",
+      "overworld.currentLocation",
+      "overworld.loadMap",
+      "overworld.loadMapInDirection",
+      "overworld.getMapAt",
+      "overworld.getMapInDirection",
+      "overworld.mapExistsAt",
+      "overworld.mapExistsInDirection",
+      "overworld.onMapLoaded",
+      "overworld.setAnimationType",
+      "overworld.setAnimationDuration",
+      "overworld.setAnimationTimingFunction",
+      "overworld.setAnimationFadeColor",
+      "overworld.setScrollAnimationZIndex",
+      "overworld.setMapTransitionsEnabled",
+      "overworld.setMapTransitionRadius",
+      "overworld.setWallsBlockTransitions",
+      "overworld.setContinuousModeEnabled",
+      "overworld.createMap16",
+      "overworld.createMap8",
+      "overworld.mapRow16",
+      "overworld.mapRow8",
+      "overworld.tilemap8",
+      "overworld.tilemap16"
+    ]
+  },
+  {
+    "id": "pxt-status-bar",
+    "repo": "jwunderl/pxt-status-bar",
+    "commit": "917b24b4a9b61b581734b2d44cd418f211a55586",
+    "description": "Attach health, energy and progress bars to individual characters and react to thresholds.",
+    "compile": true,
+    "diagnostics": [],
+    "blocks": 18,
+    "missingTooltips": [
+      "StatusBarSprite.attachToSprite",
+      "StatusBarSprite.spriteAttachedTo",
+      "StatusBarSprite.setColor",
+      "StatusBarSprite.setBarBorder",
+      "StatusBarSprite.setLabel",
+      "StatusBarSprite.setStatusBarFlag",
+      "StatusBarSprite.setBarSize",
+      "StatusBarSprite.positionDirection",
+      "StatusBarSprite.setOffsetPadding",
+      "statusbars.create",
+      "statusbars.getStatusBarAttachedTo",
+      "statusbars.onZero",
+      "statusbars.onStatusReached",
+      "statusbars.onDisplayUpdated",
+      "statusbars.allOfKind"
+    ]
+  },
+  {
+    "id": "arcade-state-transitions",
+    "repo": "riknoll/arcade-state-transitions",
+    "commit": "a76e2753327c5361a35279a38ad496e72ee88a0f",
+    "description": "Organize game modes and enemy AI with named states, entry events and automatic timed transitions.",
+    "compile": true,
+    "diagnostics": [],
+    "blocks": 16,
+    "missingTooltips": []
+  },
+  {
+    "id": "arcade-tile-scanner",
+    "repo": "riknoll/arcade-tile-scanner",
+    "commit": "00657c44223b7d5c0ed46cf7b0569b556ec3950f",
+    "description": "Find connected areas, borders and lines of matching tiles and change them as a group.",
+    "compile": true,
+    "diagnostics": [],
+    "blocks": 32,
+    "missingTooltips": []
+  },
+  {
+    "id": "arcade-shadowcasting",
+    "repo": "riknoll/arcade-shadowcasting",
+    "commit": "ae9341760b393a8a99a62020042faca5ad982833",
+    "description": "Hide parts of a map that are behind walls from a chosen character.",
+    "compile": true,
+    "diagnostics": [],
+    "blocks": 6,
+    "missingTooltips": [
+      "shadowcasting.setAnchor",
+      "shadowcasting.setShadowColor",
+      "shadowcasting.setShadowMode",
+      "shadowcasting.setShadowImage",
+      "shadowcasting.setShadowEnabled",
+      "shadowcasting.setShadowZIndex"
+    ]
+  },
+  {
+    "id": "arcade-sprite-util",
+    "repo": "jwunderl/arcade-sprite-util",
+    "commit": "6b20196a56d96a715169b50e59cc9f5d0bfd979a",
+    "description": "Measure sprite distances and headings, find nearby actors and place or move sprites at an angle.",
+    "compile": true,
+    "diagnostics": [],
+    "blocks": 28,
+    "missingTooltips": [
+      "spriteutils.roundWithPrecision",
+      "spriteutils.addEventHandler",
+      "spriteutils.point",
+      "spriteutils.transformSpriteImage"
+    ]
+  },
+  {
+    "id": "pxt-raycasting",
+    "repo": "AqeeAqee/pxt-raycasting",
+    "commit": "bd658396502922354638ab5dafbcc6245aeee877",
+    "description": "Use an explicit render-mode block to explore a tilemap in first-person 2.5D, with directional sprites.",
+    "compile": true,
+    "diagnostics": [],
+    "blocks": 22,
+    "missingTooltips": []
+  }
+]

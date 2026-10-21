@@ -1,11 +1,24 @@
 {
   "name": "labs-recipes",
-  "version": "0.1.0",
-  "description": "Full Sail Labs blocks for movement, shooting, enemies, and sprite health in MakeCode Arcade.",
+  "version": "0.2.0",
+  "description": "Labs game toolkit: movement, combat, platforms, animation, world, camera, HUD, inventory, achievements, random, and sight.",
   "license": "MIT",
-  "dependencies": { "device": "*" },
-  "files": ["README.md", "recipes.ts"],
-  "testFiles": ["test.ts"],
-  "supportedTargets": ["arcade"],
+  "dependencies": {
+    "device": "*"
+  },
+  "files": [
+    "README.md",
+    "categories.ts",
+    "recipes.ts",
+    "classic.ts",
+    "shapes.ts",
+    "toolkit.ts"
+  ],
+  "testFiles": [
+    "test.ts"
+  ],
+  "supportedTargets": [
+    "arcade"
+  ],
   "public": true
 }

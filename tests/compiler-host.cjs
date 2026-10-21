@@ -2,7 +2,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 require('pxt-core');
 
-async function compileProgram(source) {
+async function compileProgram(source, extras = {}) {
     // Load Microsoft's published target, never the Labs site's generated target.
     const targetPath = process.env.ARCADE_TARGET_JSON || require.resolve('pxt-arcade/built/target.json');
     const target = JSON.parse(fs.readFileSync(targetPath, 'utf8'));
@@ -11,10 +11,12 @@ async function compileProgram(source) {
     const extension = { 'pxt.json': JSON.stringify(config) };
     for (const file of config.files) extension[file] = fs.readFileSync(path.join(root, file), 'utf8');
     target.bundledpkgs[config.name] = extension;
+    Object.assign(target.bundledpkgs, extras.packages || {});
     pxt.setAppTarget(target);
     const files = {
-        'pxt.json': JSON.stringify({ name: 'Labs extension test', dependencies: { device: '*', [config.name]: '*' }, files: ['main.ts'] }),
-        'main.ts': source
+        'pxt.json': JSON.stringify({ name: 'Labs extension test', dependencies: { device: '*', [config.name]: '*', ...extras.dependencies }, files: ['main.ts', ...Object.keys(extras.files || {})], ...(extras.config || {}) }),
+        'main.ts': source,
+        ...extras.files
     };
     const host = {
         readFile(pkg, name) { return (pkg.level === 0 ? files : target.bundledpkgs[pkg.id] || {})[name]; },

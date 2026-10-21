@@ -1,0 +1,194 @@
+{
+  "labs_set_facing": {
+    "namespace": "labsMovement",
+    "color": "#1BA8E0"
+  },
+  "labs_get_facing": {
+    "namespace": "labsMovement",
+    "color": "#1BA8E0"
+  },
+  "labs_move_facing": {
+    "namespace": "labsMovement",
+    "color": "#1BA8E0"
+  },
+  "labs_adventure_move": {
+    "namespace": "labsMovement",
+    "color": "#1BA8E0"
+  },
+  "labs_grid_move": {
+    "namespace": "labsMovement",
+    "color": "#1BA8E0"
+  },
+  "labs_is_facing": {
+    "namespace": "labsMovement",
+    "color": "#1BA8E0"
+  },
+  "labs_set_fire_point": {
+    "namespace": "labsCombat",
+    "color": "#c44569"
+  },
+  "labs_clear_fire_point": {
+    "namespace": "labsCombat",
+    "color": "#c44569"
+  },
+  "labs_shoot_forward": {
+    "namespace": "labsCombat",
+    "color": "#c44569"
+  },
+  "labs_health_set": {
+    "namespace": "labsCombat",
+    "color": "#c44569"
+  },
+  "labs_health_get": {
+    "namespace": "labsCombat",
+    "color": "#c44569"
+  },
+  "labs_damage": {
+    "namespace": "labsCombat",
+    "color": "#c44569"
+  },
+  "labs_knockback": {
+    "namespace": "labsCombat",
+    "color": "#c44569"
+  },
+  "labs_held_tool": {
+    "namespace": "labsCombat",
+    "color": "#c44569"
+  },
+  "labs_using_tool": {
+    "namespace": "labsCombat",
+    "color": "#c44569"
+  },
+  "labs_melee_attack": {
+    "namespace": "labsCombat",
+    "color": "#c44569"
+  },
+  "labs_is_attacking": {
+    "namespace": "labsCombat",
+    "color": "#c44569"
+  },
+  "labs_patrol": {
+    "namespace": "labsEnemies",
+    "color": "#e58e26"
+  },
+  "labs_follow": {
+    "namespace": "labsEnemies",
+    "color": "#e58e26"
+  },
+  "labs_roll_platforms": {
+    "namespace": "labsEnemies",
+    "color": "#e58e26"
+  },
+  "labs_platform_wander": {
+    "namespace": "labsEnemies",
+    "color": "#e58e26"
+  },
+  "labs_platform_kind": {
+    "namespace": "labsPlatforms",
+    "color": "#20bf6b"
+  },
+  "labs_sprite_ladders": {
+    "namespace": "labsPlatforms",
+    "color": "#20bf6b"
+  },
+  "labs_is_climbing": {
+    "namespace": "labsPlatforms",
+    "color": "#20bf6b"
+  },
+  "labs_fixed_jump": {
+    "namespace": "labsPlatforms",
+    "color": "#20bf6b"
+  },
+  "labs_jump_climb_enabled": {
+    "namespace": "labsPlatforms",
+    "color": "#20bf6b"
+  },
+  "labs_jump_over_event": {
+    "namespace": "labsPlatforms",
+    "color": "#20bf6b"
+  },
+  "labs_forgiving_jump": {
+    "namespace": "labsPlatforms",
+    "color": "#20bf6b"
+  },
+  "labs_climb_ladders": {
+    "namespace": "labsPlatforms",
+    "color": "#20bf6b"
+  },
+  "labs_one_way_platform": {
+    "namespace": "labsPlatforms",
+    "color": "#20bf6b"
+  },
+  "labs_drop_through": {
+    "namespace": "labsPlatforms",
+    "color": "#20bf6b"
+  },
+  "labs_on_platform": {
+    "namespace": "labsPlatforms",
+    "color": "#20bf6b"
+  },
+  "labs_footprint": {
+    "namespace": "labsPlatforms",
+    "color": "#20bf6b"
+  },
+  "labs_hop_to": {
+    "namespace": "labsPlatforms",
+    "color": "#20bf6b"
+  },
+  "labs_platform_animations": {
+    "namespace": "labsAnimation",
+    "color": "#00b894"
+  },
+  "labs_image_shapes": {
+    "namespace": "labsWorld",
+    "color": "#4b6584"
+  },
+  "labs_slide_room": {
+    "namespace": "labsWorld",
+    "color": "#4b6584"
+  },
+  "labs_room_camera": {
+    "namespace": "labsCamera",
+    "color": "#596275"
+  },
+  "labs_builtin_hud": {
+    "namespace": "labsHUD",
+    "color": "#cf6a87"
+  },
+  "labs_hud_text": {
+    "namespace": "labsHUD",
+    "color": "#cf6a87"
+  },
+  "labs_unlock_achievement": {
+    "namespace": "labsAchievements",
+    "color": "#8854D0"
+  },
+  "labs_achievement_unlocked": {
+    "namespace": "labsAchievements",
+    "color": "#8854D0"
+  },
+  "labs_on_achievement": {
+    "namespace": "labsAchievements",
+    "color": "#8854D0"
+  },
+  "labs_reset_achievement": {
+    "namespace": "labsAchievements",
+    "color": "#8854D0"
+  },
+  "labs_seeded_random": {
+    "namespace": "labsRandom",
+    "color": "#A55EEA"
+  },
+  "labs_seeded_integer": {
+    "namespace": "labsRandom",
+    "color": "#A55EEA"
+  },
+  "labs_clear_sight": {
+    "namespace": "labsSight",
+    "color": "#3867d6"
+  },
+  "labs_can_see": {
+    "namespace": "labsSight",
+    "color": "#3867d6"
+  }
+}

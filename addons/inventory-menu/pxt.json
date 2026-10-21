@@ -1,0 +1,14 @@
+{
+  "name": "labs-inventory-menu",
+  "version": "0.2.0",
+  "description": "Optional item chooser for Labs Inventory using the original Arcade Mini Menu extension.",
+  "license": "MIT",
+  "dependencies": {
+    "device": "*",
+    "labs-recipes": "github:ZackyDoo/pxt-labs-recipes#v0.2.0",
+    "arcade-mini-menu": "github:riknoll/arcade-mini-menu#f57fa4387ebd1b2aff28faa807cc04078c7ad39e"
+  },
+  "files": ["menu.ts", "README.md"],
+  "supportedTargets": ["arcade"],
+  "public": true
+}
