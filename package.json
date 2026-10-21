@@ -10,14 +10,9 @@
   "engines": {
     "node": ">=18"
   },
-  "overrides": {
-    "puppeteer": {
-      "typescript": "5.9.3"
-    }
-  },
   "devDependencies": {
     "pxt-arcade": "4.2.1",
     "pxt-core": "13.2.1",
-    "typescript": "4.8.3"
+    "typescript": "5.9.3"
   }
 }
