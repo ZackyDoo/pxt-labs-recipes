@@ -312,14 +312,14 @@ namespace labs {
     }
 
     /** Choose pictures automatically from platform contact and ladder state: standing, walking, airborne, or climbing. Draw the character facing left; it mirrors when moving right and keeps facing at rest. A paused climber stops animating. */
-    //% blockId=labs_platform_animations block="animate $sprite standing $idle walking $walk airborne $air climbing $climb || every $interval ms" group="Character" blockNamespace=labsAnimation color="#00b894"
+    //% blockId=labs_platform_animations block="animate $sprite standing $idle walking $walk airborne $air climbing $climb || every $interval ms" blockNamespace=animation color="#00b894" group="Character"
     //% sprite.shadow=variables_get sprite.defl=mySprite idle.shadow=animation_editor walk.shadow=animation_editor air.shadow=animation_editor climb.shadow=animation_editor interval.defl=100 expandableArgumentMode="toggle"
     export function animatePlatformer(sprite: Sprite, idle: Image[], walk: Image[], air: Image[], climb: Image[], interval: number = 100) {
         const a = classic(sprite); a.motionFrames = [idle, walk, air, climb]; a.motionInterval = Math.max(1, interval); a.motionLast = null;
     }
 
     /** Repeatedly swing a tool above and in front of this character for a set time. Frames alternate between raised and lowered pictures. Only the tool's real sprite can hit enemies; the character is not made invincible. Heavy tools prevent jumping and climbing. Optional character poses work with platformer animation. Zero time stops the tool. */
-    //% blockId=labs_held_tool block="let $sprite swing $tool frames $frames for $milliseconds ms || reach $reach swing every $interval ms heavy $heavy character poses $poses" group="Combat" blockNamespace=labsCombat color="#c44569"
+    //% blockId=labs_held_tool block="let $sprite swing $tool frames $frames for $milliseconds ms || reach $reach swing every $interval ms heavy $heavy character poses $poses" blockNamespace=sprites color="#4B7BEC" group="Combat"
     //% sprite.shadow=variables_get sprite.defl=mySprite tool.shadow=variables_get tool.defl=tool frames.shadow=animation_editor poses.shadow=animation_editor milliseconds.defl=10000 reach.defl=16 interval.defl=100 heavy.shadow=toggleOnOff heavy.defl=true expandableArgumentMode="toggle"
     export function swingHeldTool(sprite: Sprite, tool: Sprite, frames: Image[], milliseconds: number, reach: number = 16, interval: number = 100, heavy: boolean = true, poses: Image[] = null) {
         const a = classic(sprite); finishTool(a);
@@ -335,7 +335,7 @@ namespace labs {
     }
 
     /** True only while this character's timed held-tool swing is active. Use this in hit events to award points or choose an effect. */
-    //% blockId=labs_using_tool block="$sprite is swinging a held tool" group="Combat" blockNamespace=labsCombat color="#c44569"
+    //% blockId=labs_using_tool block="$sprite is swinging a held tool" blockNamespace=sprites color="#4B7BEC" group="Combat"
     //% sprite.shadow=variables_get sprite.defl=mySprite
     export function isUsingTool(sprite: Sprite): boolean { const a = classic(sprite); return !!a.heldTool && game.runtime() < a.heldUntil; }
 
@@ -378,26 +378,26 @@ namespace labs {
     }
 
     /** Land on the painted tops of every platform of this kind, including platforms created later. Slopes and moving platforms work; jumping up through them is allowed. */
-    //% blockId=labs_platform_kind block="let $sprite stand on platforms of kind $kind" group="Physics" weight=44 blockNamespace=labsPlatforms color="#20bf6b"
+    //% blockId=labs_platform_kind block="let $sprite stand on platforms of kind $kind" weight=44 blockNamespace=sprites color="#4B7BEC" group="Physics"
     //% sprite.shadow=variables_get sprite.defl=mySprite kind.shadow=spritekind
     export function standOnPlatformsOfKind(sprite: Sprite, kind: number) {
         const a = classic(sprite); if (a.platformKinds.indexOf(kind) < 0) a.platformKinds.push(kind);
     }
 
     /** Up and down climb the rectangles of ladder sprites of this kind. The character lines up with the ladder and steps onto the platform at either end. Gaps between separate ladder pieces cannot be climbed. */
-    //% blockId=labs_sprite_ladders block="let $sprite climb ladders of kind $kind at speed $speed" group="Tilemaps" weight=49 blockNamespace=labsPlatforms color="#20bf6b"
+    //% blockId=labs_sprite_ladders block="let $sprite climb ladders of kind $kind at speed $speed" weight=49 blockNamespace=scene color="#4b6584" group="Tilemaps"
     //% sprite.shadow=variables_get sprite.defl=mySprite kind.shadow=spritekind speed.defl=40
     export function climbSpriteLadders(sprite: Sprite, kind: number, speed: number) {
         const a = classic(sprite); if (a.ladderKinds.indexOf(kind) < 0) a.ladderKinds.push(kind); a.climbSpeed = Math.max(1, speed);
     }
 
     /** True while the character is holding or moving on a ladder. Use it to show a climbing picture or to prevent an action while on a ladder. */
-    //% blockId=labs_is_climbing block="$sprite is climbing a ladder" group="Physics" blockNamespace=labsPlatforms color="#20bf6b"
+    //% blockId=labs_is_climbing block="$sprite is climbing a ladder" blockNamespace=sprites color="#4B7BEC" group="Physics"
     //% sprite.shadow=variables_get sprite.defl=mySprite
     export function isClimbing(sprite: Sprite): boolean { return classic(sprite).climbing; }
 
     /** Roll downhill along painted platforms of this kind, drop at an edge and roll back along the next slope. Optional ladder sprites allow random downward routes. Speed is pixels per second; chance is a percent per ladder crossing. */
-    //% blockId=labs_roll_platforms block="roll $sprite down platforms of kind $kind at speed $speed || down ladders of kind $ladderKind chance $chance percent" group="Physics" blockNamespace=labsEnemies color="#e58e26"
+    //% blockId=labs_roll_platforms block="roll $sprite down platforms of kind $kind at speed $speed || down ladders of kind $ladderKind chance $chance percent" blockNamespace=sprites color="#4B7BEC" group="Physics"
     //% sprite.shadow=variables_get sprite.defl=mySprite kind.shadow=spritekind ladderKind.shadow=spritekind speed.defl=45 chance.defl=25 chance.min=0 chance.max=100 expandableArgumentMode="toggle" inlineInputMode=inline
     export function rollDownPlatforms(sprite: Sprite, kind: number, speed: number, ladderKind: number = 2147483647, chance: number = 0) {
         standOnPlatformsOfKind(sprite, kind);
@@ -407,21 +407,21 @@ namespace labs {
     }
 
     /** Walk back and forth on painted platforms, turning around at edges. At each ladder crossing, this percent chance decides whether to climb up or down. Complete ladder sprites join levels; no path or coordinate list is needed. */
-    //% blockId=labs_platform_wander block="let $sprite explore platforms of kind $kind using ladders of kind $ladderKind at speed $speed || ladder chance $chance percent" group="Physics" blockNamespace=labsEnemies color="#e58e26"
+    //% blockId=labs_platform_wander block="let $sprite explore platforms of kind $kind using ladders of kind $ladderKind at speed $speed || ladder chance $chance percent" blockNamespace=sprites color="#4B7BEC" group="Physics"
     //% sprite.shadow=variables_get sprite.defl=mySprite kind.shadow=spritekind ladderKind.shadow=spritekind speed.defl=25 chance.defl=35 chance.min=0 chance.max=100 expandableArgumentMode="toggle"
     export function explorePlatforms(sprite: Sprite, kind: number, ladderKind: number, speed: number, chance: number = 35) {
         rollDownPlatforms(sprite, kind, speed, ladderKind, chance); classic(sprite).rollPatrol = true;
     }
 
     /** A starts a fixed arc: releasing A does not shorten it, and changing direction in the air does not steer it. Use normal horizontal controls for walking. Speed and gravity are pixels per second and pixels per second squared. */
-    //% blockId=labs_fixed_jump block="give $sprite fixed jump speed $speed gravity $gravity" group="Single Player" blockNamespace=labsPlatforms color="#20bf6b"
+    //% blockId=labs_fixed_jump block="give $sprite fixed jump speed $speed gravity $gravity" blockNamespace=controller color="#D54322" group="Single Player"
     //% sprite.shadow=variables_get sprite.defl=mySprite speed.defl=150 gravity.defl=600
     export function fixedArcJump(sprite: Sprite, speed: number, gravity: number) {
         forgivingJump(sprite, speed, gravity, 0, 0); classic(sprite).fixedJump = true;
     }
 
     /** Turn jumping and climbing on or off for this character. Walking still works. Turning it off while climbing lets gravity resume; useful while carrying a heavy item or using a tool. */
-    //% blockId=labs_jump_climb_enabled block="allow $sprite to jump and climb $enabled" group="Single Player" blockNamespace=labsPlatforms color="#20bf6b"
+    //% blockId=labs_jump_climb_enabled block="allow $sprite to jump and climb $enabled" blockNamespace=controller color="#D54322" group="Single Player"
     //% sprite.shadow=variables_get sprite.defl=mySprite enabled.shadow=toggleOnOff
     export function allowJumpAndClimb(sprite: Sprite, enabled: boolean) {
         const a = classic(sprite); a.jumpClimbEnabled = enabled;
@@ -429,13 +429,13 @@ namespace labs {
     }
 
     /** After this character lands from a jump, run once if it cleared obstacles of this kind. Count is the number of different obstacles passed above during that jump. Walking past them or jumping on a floor already above them does not count. */
-    //% blockId=labs_jump_over_event block="when $sprite jumps over kind $kind $count" group="Events" handlerStatement=1 draggableParameters=reporter blockNamespace=labsPlatforms color="#20bf6b"
+    //% blockId=labs_jump_over_event block="when $sprite jumps over kind $kind $count" handlerStatement=1 draggableParameters=reporter blockNamespace=sprites color="#4B7BEC" group="Events"
     //% sprite.shadow=variables_get sprite.defl=mySprite kind.shadow=spritekind
     export function onJumpedOver(sprite: Sprite, kind: number, handler: (count: number) => void) {
         const a = classic(sprite); a.jumpKinds.push(kind); a.jumpHandlers.push(handler);
     }
     /** A jumps with a short walk-off grace period, an early-press buffer, and release-to-short-hop. Use with normal horizontal movement. */
-    //% blockId=labs_forgiving_jump block="give $sprite jump speed $speed gravity $gravity || walk-off grace $grace ms early-press buffer $buffer ms" group="Single Player" weight=85 blockNamespace=labsPlatforms color="#20bf6b"
+    //% blockId=labs_forgiving_jump block="give $sprite jump speed $speed gravity $gravity || walk-off grace $grace ms early-press buffer $buffer ms" weight=85 blockNamespace=controller color="#D54322" group="Single Player"
     //% sprite.shadow=variables_get sprite.defl=mySprite speed.defl=150 gravity.defl=350 grace.defl=100 buffer.defl=120
     //% expandableArgumentMode="toggle" inlineInputMode=inline
     export function forgivingJump(sprite: Sprite, speed: number, gravity: number, grace: number = 100, buffer: number = 120) {
@@ -444,31 +444,31 @@ namespace labs {
         if (a.climbing) a.savedGravity = Math.max(0, gravity); else sprite.ay = Math.max(0, gravity);
     }
     /** Up/down climbs non-wall ladder tiles. Gravity pauses while climbing and returns on exit; horizontal controls still work. */
-    //% blockId=labs_climb_ladders block="let $sprite climb $tile tiles at speed $speed" group="Tilemaps" weight=50 blockNamespace=labsPlatforms color="#20bf6b"
+    //% blockId=labs_climb_ladders block="let $sprite climb $tile tiles at speed $speed" weight=50 blockNamespace=scene color="#4b6584" group="Tilemaps"
     //% sprite.shadow=variables_get sprite.defl=mySprite tile.shadow=tileset_tile_picker speed.defl=50
     export function climbLadders(sprite: Sprite, tile: Image, speed: number) {
         const a = classic(sprite); a.ladder = tile; a.climbSpeed = Math.max(0, speed);
     }
     /** Jump through this platform from below and land on its painted top, including slopes. Use unrotated platform artwork; moving platforms carry the rider. Call once per platform. */
-    //% blockId=labs_one_way_platform block="let $sprite stand on $platform from above" group="Physics" weight=45 blockNamespace=labsPlatforms color="#20bf6b"
+    //% blockId=labs_one_way_platform block="let $sprite stand on $platform from above" weight=45 blockNamespace=sprites color="#4B7BEC" group="Physics"
     //% sprite.shadow=variables_get sprite.defl=mySprite platform.shadow=variables_get platform.defl=platform
     export function standOnPlatform(sprite: Sprite, platform: Sprite) {
         if (sprite == platform) return;
         const a = classic(sprite); if (a.platforms.indexOf(platform) < 0) a.platforms.push(platform);
     }
     /** Drop through these sprite platforms without changing tilemap walls or other players' collisions. */
-    //% blockId=labs_drop_through block="drop $sprite through platforms for $milliseconds ms" group="Physics" weight=44 blockNamespace=labsPlatforms color="#20bf6b"
+    //% blockId=labs_drop_through block="drop $sprite through platforms for $milliseconds ms" weight=44 blockNamespace=sprites color="#4B7BEC" group="Physics"
     //% sprite.shadow=variables_get sprite.defl=mySprite milliseconds.defl=250
     export function dropThroughPlatforms(sprite: Sprite, milliseconds: number) {
         const a = classic(sprite); a.dropUntil = game.runtime() + Math.max(1, milliseconds); a.support = null; a.lastGround = -100000;
         sprite.vy = Math.max(30, sprite.vy);
     }
     /** Whether a sprite is supported by a Labs one-way platform, rather than a tilemap wall. */
-    //% blockId=labs_on_platform block="$sprite is standing on a platform" group="Physics" weight=43 blockNamespace=labsPlatforms color="#20bf6b"
+    //% blockId=labs_on_platform block="$sprite is standing on a platform" weight=43 blockNamespace=sprites color="#4B7BEC" group="Physics"
     //% sprite.shadow=variables_get sprite.defl=mySprite
     export function isOnPlatform(sprite: Sprite): boolean { return !!classic(sprite).support; }
     /** Cardinal-only movement. The last newly pressed axis wins; diagonal input never moves diagonally and facing persists at rest. */
-    //% blockId=labs_adventure_move block="move $sprite in four directions at speed $speed" group="Single Player" weight=84 blockNamespace=labsMovement color="#1BA8E0"
+    //% blockId=labs_adventure_move block="move $sprite in four directions at speed $speed" weight=84 blockNamespace=controller color="#D54322" group="Single Player"
     //% sprite.shadow=variables_get sprite.defl=mySprite speed.defl=80
     export function moveFourDirections(sprite: Sprite, speed: number) {
         const a = classic(sprite); a.fourWay = true; a.walkSpeed = Math.max(0, speed);
@@ -476,7 +476,7 @@ namespace labs {
         controller.moveSprite(sprite, 0, 0);
     }
     /** Move with the arrow buttons, one direction at a time. Turns wait for a path line, so the sprite stays lined up with narrow passages. Speed is pixels per second. The optional x and y move the path lines. */
-    //% blockId=labs_grid_move block="move $sprite along $grid pixel lanes at speed $speed || lane origin x $originX y $originY" group="Single Player" weight=83 blockNamespace=labsMovement color="#1BA8E0"
+    //% blockId=labs_grid_move block="move $sprite along $grid pixel lanes at speed $speed || lane origin x $originX y $originY" weight=83 blockNamespace=controller color="#D54322" group="Single Player"
     //% sprite.shadow=variables_get sprite.defl=mySprite grid.defl=8 speed.defl=80 originX.defl=0 originY.defl=0
     //% expandableArgumentMode="toggle" inlineInputMode=inline
     export function moveOnGrid(sprite: Sprite, grid: number, speed: number, originX: number = 0, originY: number = 0) {
@@ -484,13 +484,13 @@ namespace labs {
         const a = classic(sprite); a.turnGrid = Math.max(1, grid); a.originX = originX; a.originY = originY;
     }
     /** Only this rectangle bumps into walls. For example, use the character's feet so its head can overlap a wall. The x and y offsets start at the image's top-left corner. The box stays the same when the image changes. */
-    //% blockId=labs_footprint block="set $sprite collision box width $width height $height offset x $x y $y" group="Physics" weight=42 blockNamespace=labsPlatforms color="#20bf6b"
+    //% blockId=labs_footprint block="set $sprite collision box width $width height $height offset x $x y $y" weight=42 blockNamespace=sprites color="#4B7BEC" group="Physics"
     //% sprite.shadow=variables_get sprite.defl=mySprite width.defl=8 height.defl=8 x.defl=4 y.defl=8 inlineInputMode=inline
     export function setCollisionBox(sprite: Sprite, width: number, height: number, x: number, y: number) {
         classic(sprite).footprint = [Math.max(1, width), Math.max(1, height), x, y];
     }
     /** Attack in the direction the character faces. Use a weapon sprite that you created first. Reach is the distance between their centers in pixels. The weapon follows the character and can hit only during the swing. Movement pauses until the rest time ends. Another attack is ignored while the character is busy. */
-    //% blockId=labs_melee_attack block="make $sprite attack with $weapon reach $reach || wait $windup ms swing $active ms rest $recovery ms" group="Combat" weight=65 blockNamespace=labsCombat color="#c44569"
+    //% blockId=labs_melee_attack block="make $sprite attack with $weapon reach $reach || wait $windup ms swing $active ms rest $recovery ms" weight=65 blockNamespace=sprites color="#4B7BEC" group="Combat"
     //% sprite.shadow=variables_get sprite.defl=mySprite weapon.shadow=variables_get weapon.defl=weapon reach.defl=12 windup.defl=83 active.defl=133 recovery.defl=50 inlineInputMode=inline
     //% expandableArgumentMode="toggle"
     export function startMeleeAttack(sprite: Sprite, weapon: Sprite, reach: number, windup: number = 83, active: number = 133, recovery: number = 50) {
@@ -502,17 +502,17 @@ namespace labs {
         weapon.setFlag(SpriteFlag.GhostThroughWalls, true); weapon.setFlag(SpriteFlag.Invisible, true); weapon.setFlag(SpriteFlag.GhostThroughSprites, true);
     }
     /** True from the start of an attack until its rest time ends. Use this to keep the attack picture showing instead of a walking picture. */
-    //% blockId=labs_is_attacking block="$sprite is attacking" group="Combat" weight=64 blockNamespace=labsCombat color="#c44569"
+    //% blockId=labs_is_attacking block="$sprite is attacking" weight=64 blockNamespace=sprites color="#4B7BEC" group="Combat"
     //% sprite.shadow=variables_get sprite.defl=mySprite
     export function isAttacking(sprite: Sprite): boolean {
         const a = classic(sprite); return game.runtime() < a.attackStart + a.windup + a.active + a.recovery;
     }
     /** True when the character is looking in this direction, even while standing still. */
-    //% blockId=labs_is_facing block="$sprite is facing $direction" group="Physics" weight=41 blockNamespace=labsMovement color="#1BA8E0" blockHidden=true
+    //% blockId=labs_is_facing block="$sprite is facing $direction" weight=41 blockHidden=true blockNamespace=sprites color="#4B7BEC" group="Physics"
     //% sprite.shadow=variables_get sprite.defl=mySprite
     export function isFacing(sprite: Sprite, direction: LabsFacing): boolean { return labs.facing(sprite) == direction; }
     /** Hop in an arc to a chosen spot, then land there. Height is how far above the straight path the sprite rises. Walls are ignored during the hop. Another hop is ignored until the sprite lands. */
-    //% blockId=labs_hop_to block="make $sprite hop to x $x y $y || height $height over $milliseconds ms" group="Physics" weight=40 blockNamespace=labsPlatforms color="#20bf6b"
+    //% blockId=labs_hop_to block="make $sprite hop to x $x y $y || height $height over $milliseconds ms" weight=40 blockNamespace=sprites color="#4B7BEC" group="Physics"
     //% sprite.shadow=variables_get sprite.defl=mySprite height.defl=16 milliseconds.defl=500 expandableArgumentMode="toggle" inlineInputMode=inline
     export function hopTo(sprite: Sprite, x: number, y: number, height: number = 16, milliseconds: number = 500) {
         const a = classic(sprite);
@@ -522,7 +522,7 @@ namespace labs {
         sprite.setFlag(SpriteFlag.GhostThroughWalls, true);
     }
     /** Show text at a fixed spot on the screen, even when the camera moves. Use the same x and y to change it. Use empty text to hide it. */
-    //% blockId=labs_hud_text block="HUD text $text at x $x y $y color $color" group="HUD" weight=50 blockNamespace=labsHUD color="#cf6a87"
+    //% blockId=labs_hud_text block="HUD text $text at x $x y $y color $color" weight=50 blockNamespace=scene color="#4b6584" group="HUD"
     //% color.shadow=colorindexpicker color.defl=1 x.defl=0 y.defl=0 inlineInputMode=inline
     export function hudText(text: string, x: number, y: number, color: number) {
         const current = game.currentScene();
@@ -537,7 +537,7 @@ namespace labs {
         labels.push({text:text,x:x,y:y,color:color});
     }
     /** Change to another tilemap by sliding the old room away. Place the player at the new x and y. Movement pauses during the slide. Set HUD height to leave a scoreboard at the top still. Direction means the way the player is traveling. */
-    //% blockId=labs_slide_room block="slide $sprite to tilemap $map at x $x y $y direction $direction || duration $milliseconds ms HUD height $hudHeight" group="Tilemaps" weight=49 blockNamespace=labsWorld color="#4b6584"
+    //% blockId=labs_slide_room block="slide $sprite to tilemap $map at x $x y $y direction $direction || duration $milliseconds ms HUD height $hudHeight" weight=49 blockNamespace=scene color="#4b6584" group="Tilemaps"
     //% sprite.shadow=variables_get sprite.defl=mySprite map.shadow=tiles_tilemap_editor x.defl=128 y.defl=149 milliseconds.defl=400 hudHeight.defl=0
     //% expandableArgumentMode="toggle" inlineInputMode=inline
     export function slideToRoom(sprite: Sprite, map: tiles.TileMapData, x: number, y: number, direction: LabsFacing, milliseconds: number = 400, hudHeight: number = 0) {
@@ -573,7 +573,7 @@ namespace labs {
         });
     }
     /** Keep the camera in one grid room until the player crosses an edge, then slide to the next room. Use instead of camera follow. */
-    //% blockId=labs_room_camera block="camera follows $sprite room by room || width $width height $height slide $milliseconds ms" group="Camera" weight=75 blockNamespace=labsCamera color="#596275"
+    //% blockId=labs_room_camera block="camera follows $sprite room by room || width $width height $height slide $milliseconds ms" weight=75 blockNamespace=scene color="#4b6584" group="Camera"
     //% sprite.shadow=variables_get sprite.defl=mySprite width.defl=160 height.defl=120 milliseconds.defl=200
     //% expandableArgumentMode="toggle" inlineInputMode=inline
     export function roomCamera(sprite: Sprite, width: number = 160, height: number = 120, milliseconds: number = 200) {

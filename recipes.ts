@@ -144,19 +144,19 @@ namespace labs {
     }
 
     /** Set a sprite's logical direction without changing its image or velocity. */
-    //% blockId=labs_set_facing block="set $sprite facing $direction" group="Movement" weight=90 blockNamespace=labsMovement color="#1BA8E0"
+    //% blockId=labs_set_facing block="set $sprite facing $direction" weight=90 blockNamespace=sprites color="#4B7BEC" group="Movement"
     //% sprite.shadow=variables_get sprite.defl=mySprite
     export function setFacing(sprite: Sprite, direction: LabsFacing) {
         actor(sprite).facing = direction;
     }
 
     /** Read the last logical direction of this sprite, including while it is stopped. */
-    //% blockId=labs_get_facing block="$sprite facing" group="Movement" weight=89 blockNamespace=labsMovement color="#1BA8E0"
+    //% blockId=labs_get_facing block="$sprite facing" weight=89 blockNamespace=sprites color="#4B7BEC" group="Movement"
     //% sprite.shadow=variables_get sprite.defl=mySprite
     export function facing(sprite: Sprite): LabsFacing { return actor(sprite).facing; }
 
     /** Move using directional controls. Horizontal facing wins diagonal ties; facing remains when stopped. */
-    //% blockId=labs_move_facing block="move $sprite with controls speed x $speedX y $speedY" group="Movement" weight=100 blockNamespace=labsMovement color="#1BA8E0"
+    //% blockId=labs_move_facing block="move $sprite with controls speed x $speedX y $speedY" weight=100 blockNamespace=controller color="#D54322" group="Movement"
     //% sprite.shadow=variables_get sprite.defl=mySprite speedX.defl=100 speedY.defl=100
     export function moveWithFacing(sprite: Sprite, speedX: number, speedY: number) {
         const a = manage(sprite);
@@ -168,7 +168,7 @@ namespace labs {
      * before rotation or scaling (right/down are positive). Forward describes the
      * artwork at zero degrees. The point and direction follow rotation (degrees).
      */
-    //% blockId=labs_set_fire_point block="set $sprite fire point x $x y $y forward $direction" group="Combat" weight=101 blockNamespace=labsCombat color="#c44569"
+    //% blockId=labs_set_fire_point block="set $sprite fire point x $x y $y forward $direction" weight=101 blockNamespace=sprites color="#4B7BEC" group="Combat"
     //% sprite.shadow=variables_get sprite.defl=mySprite x.defl=8 y.defl=0 direction.defl=LabsFacing.Right
     export function setFirePoint(sprite: Sprite, x: number, y: number, direction: LabsFacing = LabsFacing.Right) {
         const a = actor(sprite);
@@ -176,7 +176,7 @@ namespace labs {
     }
 
     /** Return to logical facing and the shoot block's automatic anchor. */
-    //% blockId=labs_clear_fire_point block="reset $sprite fire point" group="Combat" weight=79 blockNamespace=labsCombat color="#c44569"
+    //% blockId=labs_clear_fire_point block="reset $sprite fire point" weight=79 blockNamespace=sprites color="#4B7BEC" group="Combat"
     //% sprite.shadow=variables_get sprite.defl=mySprite
     export function clearFirePoint(sprite: Sprite) { actor(sprite).hasFirePoint = false; }
 
@@ -185,7 +185,7 @@ namespace labs {
      * rotation and scale, and replaces automatic anchor placement. Offset adds
      * world pixels along the firing direction. Without a fire point, use logical facing.
      */
-    //% blockId=labs_shoot_forward block="shoot $image from $sprite forward speed $speed || anchor $anchor offset $offset" group="Combat" weight=100 blockNamespace=labsCombat color="#c44569"
+    //% blockId=labs_shoot_forward block="shoot $image from $sprite forward speed $speed || anchor $anchor offset $offset" weight=100 blockNamespace=sprites color="#4B7BEC" group="Combat"
     //% image.shadow=screen_image_picker sprite.shadow=variables_get sprite.defl=mySprite
     //% speed.defl=100 anchor.defl=LabsAnchor.Front offset.defl=0
     //% expandableArgumentMode="toggle"
@@ -226,7 +226,7 @@ namespace labs {
     }
 
     /** Move a sprite back and forth between two points. Places it at the first point and replaces its previous Labs movement mode. */
-    //% blockId=labs_patrol block="patrol $sprite from x $x1 y $y1 to x $x2 y $y2 speed $speed" group="Enemies" weight=100 blockNamespace=labsEnemies color="#e58e26"
+    //% blockId=labs_patrol block="patrol $sprite from x $x1 y $y1 to x $x2 y $y2 speed $speed" weight=100 blockNamespace=sprites color="#4B7BEC" group="Enemies"
     //% sprite.shadow=variables_get sprite.defl=enemy speed.defl=40
     export function patrol(sprite: Sprite, x1: number, y1: number, x2: number, y2: number, speed: number) {
         const a = manage(sprite);
@@ -235,7 +235,7 @@ namespace labs {
     }
 
     /** Follow a target at the chosen speed and stop within the chosen distance. Replaces this sprite's previous Labs movement mode. */
-    //% blockId=labs_follow block="$sprite follows $target speed $speed stop distance $distance" group="Enemies" weight=90 blockNamespace=labsEnemies color="#e58e26"
+    //% blockId=labs_follow block="$sprite follows $target speed $speed stop distance $distance" weight=90 blockNamespace=sprites color="#4B7BEC" group="Enemies"
     //% sprite.shadow=variables_get target.shadow=variables_get speed.defl=40 distance.defl=16
     export function follow(sprite: Sprite, target: Sprite, speed: number, distance: number) {
         const a = manage(sprite);
@@ -243,7 +243,7 @@ namespace labs {
     }
 
     /** Set this sprite's health and clear its damage cooldown. This is separate from the built-in player life counter. */
-    //% blockId=labs_health_set block="give $sprite health $amount" group="Combat" weight=90 blockNamespace=labsCombat color="#c44569"
+    //% blockId=labs_health_set block="give $sprite health $amount" weight=90 blockNamespace=sprites color="#4B7BEC" group="Combat"
     //% sprite.shadow=variables_get amount.defl=3
     export function giveHealth(sprite: Sprite, amount: number) {
         const a = actor(sprite);
@@ -251,12 +251,12 @@ namespace labs {
     }
 
     /** Read this sprite's remaining health. A sprite without assigned health returns zero. */
-    //% blockId=labs_health_get block="$sprite health" group="Combat" weight=88 blockNamespace=labsCombat color="#c44569"
+    //% blockId=labs_health_get block="$sprite health" weight=88 blockNamespace=sprites color="#4B7BEC" group="Combat"
     //% sprite.shadow=variables_get
     export function health(sprite: Sprite): number { return actor(sprite).health; }
 
     /** Returns whether damage was applied; health reaching zero does not destroy the sprite automatically. */
-    //% blockId=labs_damage block="damage $sprite by $amount invulnerable for $milliseconds ms" group="Combat" weight=89 blockNamespace=labsCombat color="#c44569"
+    //% blockId=labs_damage block="damage $sprite by $amount invulnerable for $milliseconds ms" weight=89 blockNamespace=sprites color="#4B7BEC" group="Combat"
     //% sprite.shadow=variables_get amount.defl=1 milliseconds.defl=500
     export function damage(sprite: Sprite, amount: number, milliseconds: number): boolean {
         const a = actor(sprite);
@@ -267,7 +267,7 @@ namespace labs {
     }
 
     /** Temporarily push a sprite away from another sprite, then restore its prior velocity or Labs movement mode. */
-    //% blockId=labs_knockback block="knock $sprite away from $source speed $speed for $milliseconds ms" group="Combat" weight=80 blockNamespace=labsCombat color="#c44569"
+    //% blockId=labs_knockback block="knock $sprite away from $source speed $speed for $milliseconds ms" weight=80 blockNamespace=sprites color="#4B7BEC" group="Combat"
     //% sprite.shadow=variables_get source.shadow=variables_get speed.defl=100 milliseconds.defl=150
     export function knockback(sprite: Sprite, source: Sprite, speed: number, milliseconds: number) {
         const a = manage(sprite);

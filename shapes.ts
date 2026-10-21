@@ -1,12 +1,12 @@
 namespace labs {
     /** Choose which built-in counters appear on screen. Their values and events still work when hidden, so you can draw your own scoreboard with HUD or text blocks. */
-    //% blockId=labs_builtin_hud block="show built-in score $score lives $lives countdown $countdown" group="HUD" blockNamespace=labsHUD color="#cf6a87"
+    //% blockId=labs_builtin_hud block="show built-in score $score lives $lives countdown $countdown" blockNamespace=info color="#cf6a87" group="HUD"
     //% score.shadow=toggleOnOff lives.shadow=toggleOnOff countdown.shadow=toggleOnOff score.defl=true lives.defl=true countdown.defl=true
     export function showBuiltinHud(score: boolean, lives: boolean, countdown: boolean) {
         info.showScore(score); info.showLife(lives); info.showCountdown(countdown);
     }
     /** Each separate painted shape becomes a sprite of this kind, at its place in the picture. Transparent gaps separate shapes; touching pixels join them. The optional x and y move the whole layout. Invisible shapes can mark platforms, ladders or triggers behind background art. Returns the new sprites. */
-    //% blockId=labs_image_shapes block="make sprites of kind $kind from shapes in $picture || origin x $x y $y invisible $invisible" group="Tilemaps" blockNamespace=labsWorld color="#4b6584"
+    //% blockId=labs_image_shapes block="make sprites of kind $kind from shapes in $picture || origin x $x y $y invisible $invisible" blockNamespace=scene color="#4b6584" group="Tilemaps"
     //% kind.shadow=spritekind picture.shadow=screen_image_picker x.defl=0 y.defl=0 invisible.shadow=toggleOnOff expandableArgumentMode="toggle" blockSetVariable=pieces
     export function spritesFromShapes(kind: number, picture: Image, x: number = 0, y: number = 0, invisible: boolean = false): Sprite[] {
         const result: Sprite[] = [];

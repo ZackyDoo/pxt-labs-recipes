@@ -6,9 +6,11 @@ Install in [MakeCode Arcade](https://arcade.makecode.com/) through **Extensions*
 
 ## Toolbox
 
-54 visible core blocks are organized into **Movement, Combat, Enemies,
-Platforms, Character Animation, World, Camera, HUD, Achievements, Random, Sight, and
-Inventory**. Every block has a hover explanation. Existing Labs block IDs and
+54 visible core blocks are grouped inside Arcade's existing **Sprites, Controller,
+Scene, Game, Math, Animation, and Info** categories, following the standalone
+Labs site. **Inventory** is the only extra toolbox category. Related blocks
+appear together under groups such as Combat, Physics, Sight, Camera, HUD,
+Achievements, and Seeded random. Every block has a hover explanation. Existing Labs block IDs and
 `labs` APIs are preserved. The redundant `is facing` comparison is hidden from
 the toolbox but retained for older projects; use the facing reporter with equals.
 

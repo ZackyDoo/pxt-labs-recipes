@@ -25,7 +25,7 @@ namespace labs {
     let achievementHandlers: ((name: string) => void)[] = [];
 
     /** Remember that this achievement was earned in this project on this browser or device. True means it was just earned; earning it again returns false and does not repeat its event. */
-    //% blockId=labs_unlock_achievement block="unlock achievement $name" group="Achievements" blockSetVariable=earned blockNamespace=labsAchievements color="#8854D0"
+    //% blockId=labs_unlock_achievement block="unlock achievement $name" blockSetVariable=earned blockNamespace=game color="#8854D0" group="Achievements"
     //% name.defl="first win"
     export function unlockAchievement(name: string): boolean {
         if (!name || achievementUnlocked(name)) return false;
@@ -35,26 +35,26 @@ namespace labs {
     }
 
     /** True if this project has already saved this achievement as earned on the current browser or device. */
-    //% blockId=labs_achievement_unlocked block="achievement $name is unlocked" group="Achievements" blockNamespace=labsAchievements color="#8854D0"
+    //% blockId=labs_achievement_unlocked block="achievement $name is unlocked" blockNamespace=game color="#8854D0" group="Achievements"
     //% name.defl="first win"
     export function achievementUnlocked(name: string): boolean { return !!name && settings.readNumber("__labs_achievement:" + name) == 1; }
 
     /** Run this code once when any new achievement is earned. The name tells you which one; use normal text, sound or effects blocks to celebrate it. Previously saved achievements do not fire this event again. */
-    //% blockId=labs_on_achievement block="when achievement unlocked $name" group="Achievements" handlerStatement=1 draggableParameters=reporter blockNamespace=labsAchievements color="#8854D0"
+    //% blockId=labs_on_achievement block="when achievement unlocked $name" handlerStatement=1 draggableParameters=reporter blockNamespace=game color="#8854D0" group="Achievements"
     export function onAchievementUnlocked(handler: (name: string) => void) { achievementHandlers.push(handler); }
 
     /** Forget only this saved achievement so it can be earned again. Other achievements and saved game data are kept. */
-    //% blockId=labs_reset_achievement block="reset achievement $name" group="Achievements" blockNamespace=labsAchievements color="#8854D0"
+    //% blockId=labs_reset_achievement block="reset achievement $name" blockNamespace=game color="#8854D0" group="Achievements"
     //% name.defl="first win"
     export function resetAchievement(name: string) { if (name) settings.remove("__labs_achievement:" + name); }
 
     /** Make a separate random-number stream. The same seed repeats the same results. Other streams and Arcade's ordinary random blocks are not changed. */
-    //% blockId=labs_seeded_random block="random source with seed $seed" group="Seeded random" blockSetVariable=randomSource blockNamespace=labsRandom color="#A55EEA"
+    //% blockId=labs_seeded_random block="random source with seed $seed" blockSetVariable=randomSource blockNamespace=Math color="#A55EEA" group="Seeded random"
     //% seed.defl=12345
     export function randomSource(seed: number): LabsRandomSource { return new LabsRandomSource(seed); }
 
     /** Pick a whole number between the two limits, including both limits, using this source. Keeping the seed the same lets you repeat a level or test. */
-    //% blockId=labs_seeded_integer block="$source pick whole number from $low to $high" group="Seeded random" blockNamespace=labsRandom color="#A55EEA"
+    //% blockId=labs_seeded_integer block="$source pick whole number from $low to $high" blockNamespace=Math color="#A55EEA" group="Seeded random"
     //% source.shadow=variables_get source.defl=randomSource low.defl=0 high.defl=10
     export function randomInteger(source: LabsRandomSource, low: number, high: number): number {
         let start = Math.ceil(Math.min(low, high)), end = Math.floor(Math.max(low, high));
@@ -92,12 +92,12 @@ namespace labs {
     }
 
     /** True when a straight line between the sprites' centers crosses no wall tiles. Sprites do not block this line. Outside the tilemap counts as blocked. */
-    //% blockId=labs_clear_sight block="clear line of sight from $observer to $target" group="Sight" blockNamespace=labsSight color="#3867d6"
+    //% blockId=labs_clear_sight block="clear line of sight from $observer to $target" blockNamespace=sprites color="#4B7BEC" group="Sight"
     //% observer.shadow=variables_get observer.defl=enemy target.shadow=variables_get target.defl=mySprite
     export function clearLineOfSight(observer: Sprite, target: Sprite): boolean { return clearSight(observer, target); }
 
     /** Check whether a character can see a target in front of it, within the distance and viewing angle, without a wall in the way. Facing uses the existing Labs facing blocks; 360 degrees sees in every direction. */
-    //% blockId=labs_can_see block="$observer can see $target within $distance pixels || viewing angle $angle degrees" group="Sight" blockNamespace=labsSight color="#3867d6"
+    //% blockId=labs_can_see block="$observer can see $target within $distance pixels || viewing angle $angle degrees" blockNamespace=sprites color="#4B7BEC" group="Sight"
     //% observer.shadow=variables_get observer.defl=enemy target.shadow=variables_get target.defl=mySprite distance.defl=80 angle.defl=120 angle.min=0 angle.max=360 expandableArgumentMode=toggle
     export function canSee(observer: Sprite, target: Sprite, distance: number = 80, angle: number = 120): boolean {
         if (!observer || !target || distance < 0) return false;

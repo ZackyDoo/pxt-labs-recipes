@@ -1,6 +1,6 @@
 const test=require('node:test'),assert=require('node:assert/strict');
 const {compileProgram}=require('./compiler-host.cjs');
-test('every Labs block has a tooltip, a unique ID and a dedicated namespaced category',async()=>{
+test('every Labs block has a tooltip, a unique ID and an existing Arcade category or Inventory',async()=>{
  const {result,options}=await compileProgram('let ready = true');
  assert.ok(result.success,JSON.stringify(result.diagnostics));
  const api=pxtc.getApiInfo(result.ast,options.jres),info=pxtc.getBlocksInfo(api);
@@ -9,10 +9,10 @@ test('every Labs block has a tooltip, a unique ID and a dedicated namespaced cat
  const seen=new Set(),categories=new Set();
  for(const block of blocks){const a=block.attributes;assert.ok(!seen.has(a.blockId),a.blockId);seen.add(a.blockId);
   assert.ok(a.jsDoc?.trim().length>35,block.qName+' needs a useful tooltip');
-  const category=a.blockNamespace||block.namespace;assert.match(category,/^labs[A-Z]/,block.qName);
+  const category=a.blockNamespace||block.namespace;assert.ok(['sprites','controller','scene','game','Math','animation','info','labsInventory'].includes(category),block.qName);
   assert.ok(api.byQName[category],category+' exists in API metadata');categories.add(category);
  }
- assert.equal(categories.size,12);
+ assert.equal(categories.size,8);
  assert.equal(blocks.find(b=>b.attributes.blockId==='labs_is_facing').attributes.blockHidden,true);
 });
 test('inventory, achievements, sight, random and advanced mechanics compile and decompile together',async()=>{
