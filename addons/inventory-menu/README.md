@@ -1,6 +1,6 @@
 # Labs Inventory Menu
 
-Optional **choose item from bag** block, in **Labs Inventory**.
+Optional **choose item from bag** block, in **Inventory**.
 Install `https://github.com/ZackyDoo/pxt-labs-recipes/addons/inventory-menu`
 through Arcade's Extensions dialog. This loads Labs core and the original
 Mini Menu extension as dependencies, without copying Mini Menu's code.

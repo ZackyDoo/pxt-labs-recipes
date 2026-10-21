@@ -1,6 +1,6 @@
 {
   "name": "labs-recipes",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Labs game toolkit: movement, combat, platforms, animation, world, camera, HUD, inventory, achievements, random, and sight.",
   "license": "MIT",
   "dependencies": {

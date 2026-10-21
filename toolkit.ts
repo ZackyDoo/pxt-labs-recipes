@@ -112,7 +112,7 @@ namespace labs {
     }
 }
 
-//% block="Labs Inventory" color="#D54322" icon="\uf0b1" weight=44
+//% block="Inventory" color="#D54322" icon="\uf0b1" weight=44
 //% groups='["Bag", "Items", "Menu"]'
 namespace labsInventory {
     /** Make an empty bag. Slots count different item names, not individual copies: five coins use one slot. Each bag keeps its own items. */
