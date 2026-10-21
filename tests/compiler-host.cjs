@@ -8,9 +8,19 @@ async function compileProgram(source, extras = {}) {
     const target = JSON.parse(fs.readFileSync(targetPath, 'utf8'));
     const root = path.resolve(__dirname, '..');
     const config = JSON.parse(fs.readFileSync(path.join(root, 'pxt.json'), 'utf8'));
-    const extension = { 'pxt.json': JSON.stringify(config) };
+    const upstreamPath = path.join(root, 'built/super-packages.json');
+    const upstream = fs.existsSync(upstreamPath) ? JSON.parse(fs.readFileSync(upstreamPath, 'utf8')) : {packages: {}};
+    const offlineConfig = {...config, dependencies: {...config.dependencies}};
+    for (const [id, version] of Object.entries(config.dependencies)) {
+        if (!version.startsWith('github:')) continue;
+        const revision = version.split('#')[1];
+        if (!upstream.packages[id] || upstream.revisions[id] !== revision) throw Error('Run npm run cache:addons for '+id);
+        offlineConfig.dependencies[id] = '*';
+    }
+    const extension = { 'pxt.json': JSON.stringify(offlineConfig) };
     for (const file of config.files) extension[file] = fs.readFileSync(path.join(root, file), 'utf8');
     target.bundledpkgs[config.name] = extension;
+    Object.assign(target.bundledpkgs, upstream.packages);
     Object.assign(target.bundledpkgs, extras.packages || {});
     pxt.setAppTarget(target);
     const files = {

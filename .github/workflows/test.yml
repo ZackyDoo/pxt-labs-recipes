@@ -14,4 +14,5 @@ jobs:
           node-version: '22'
           cache: npm
       - run: npm ci --ignore-scripts --omit=optional
+      - run: npm run cache:addons
       - run: npm test

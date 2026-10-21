@@ -1,6 +1,11 @@
-# Optional Arcade add-ons
+# Included tools and optional renderers
 
-Install an original extension by pasting its GitHub URL into Extensions. These are not bundled into Labs core. All 32 audited revisions compiled individually with Labs core on Arcade 4.2.1; the combined 32-package compile had no duplicate block IDs. A six-package sample also converted to editable Blocks. This is compile/API evidence, not exhaustive runtime certification. Use only the tools your game needs.
+The main Labs install includes 29 of these original packages automatically.
+Only **pxt-raycasting**, **arcade-split-screen**, and **arcade-shadowcasting**
+remain optional. Install an optional renderer by pasting its GitHub URL into
+Extensions. The table records all 32 reviewed tools and their audited revisions.
+The combined 32-package compile had no duplicate block IDs. This is compile/API
+evidence, not exhaustive runtime certification.
 
 | Extension | Purpose | Audited commit |
 | --- | --- | --- |

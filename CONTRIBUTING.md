@@ -3,6 +3,14 @@
 This repository owns the standalone extension. The site continues in its own
 repository; changes here do not modify or deploy the site.
 
+Version 0.3.0 makes the main package a one-install 2D toolkit. Its 29 upstream
+dependencies are pinned to the audited commits in `audit/addons.json`.
+Run `npm run cache:addons` before compiler tests; this downloads original source
+into ignored `built/` files for offline compilation. The test host normalizes
+dependency locators only in that offline fixture. Student projects use the real
+GitHub dependencies in pxt.json. Raycasting, split screen, and shadowcasting stay
+optional. Do not replace original packages with copied vendor implementations.
+
 Version 0.2.0 imports the custom runtime from site commit
 `365800a` (compact Donkey Kong platform tools), adds Labs-specific toolbox
 categories and tooltip coverage, and isolates the inventory menu as an optional

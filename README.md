@@ -6,11 +6,23 @@ Install in [MakeCode Arcade](https://arcade.makecode.com/) through **Extensions*
 
 ## Toolbox
 
-54 visible core blocks are grouped inside Arcade's existing **Sprites, Controller,
+The main install now includes the broad 2D toolkit automatically: sprite data,
+timers, text sprites, tile tools, character animation, pathfinding, parallax,
+save data, combos, grids, menus, dialogue, objects, colors, lighting, effects,
+transitions, mazes, sprite events, camera offset, instruments, sound effects,
+RTTTL, overworld maps, status bars, state transitions, tile scanning, and sprite
+utilities. These 29 pinned upstream packages add 428 audited block definitions
+alongside the 54 visible custom Labs blocks. Some blocks appear in More sections
+or depend on editor context, so this is not a count of simultaneous toolbox rows.
+
+Custom Labs blocks are grouped inside Arcade's existing **Sprites, Controller,
 Scene, Game, Math, Animation, and Info** categories, following the standalone
-Labs site. **Inventory** is the only extra toolbox category. Related blocks
+Labs site. Original upstream packages retain their own toolbox categories.
+Related custom Labs blocks
 appear together under groups such as Combat, Physics, Sight, Camera, HUD,
-Achievements, and Seeded random. Every block has a hover explanation. Existing Labs block IDs and
+Achievements, and Seeded random. Every custom Labs block has a hover explanation.
+Some original upstream blocks have limited or missing hover documentation.
+Existing Labs block IDs and
 `labs` APIs are preserved. The redundant `is facing` comparison is hidden from
 the toolbox but retained for older projects; use the facing reporter with equals.
 
@@ -21,10 +33,12 @@ and line of sight. See [BLOCKS.md](BLOCKS.md) for the full block reference.
 
 ## Optional add-ons
 
-Core depends only on standard Arcade. It does not copy third-party extension
-implementations or automatically enable a renderer, controller, or camera system.
-Install original third-party extensions separately as needed; see
-[ADDONS.md](ADDONS.md) for the 32 reviewed tools and exact audited revisions.
+Raycasting, split screen, and shadowcasting remain optional because they change
+rendering modes. See [ADDONS.md](ADDONS.md) for the full catalog and exact audited
+revisions. The included 2D tools are normal original extension dependencies,
+rather than copied implementations. Arcade can resolve shared dependencies when
+another extension uses the same library. Specific controller, camera, and drawing
+features can still conflict when enabled together; use one system per role.
 
 The optional [Labs Inventory Menu](addons/inventory-menu/README.md) adds an item
 chooser using the original Mini Menu extension. Bags themselves need no add-on.
@@ -56,12 +70,13 @@ JavaScript and convert back to Blocks.
 
 ```sh
 npm ci --ignore-scripts --omit=optional
+npm run cache:addons
 npm test
 npm run test:public
 ```
 
-The 42 automated checks cover block metadata, native Blocks conversion, and
-mechanics. Compiler checks use unmodified Arcade libraries. The optional add-on
+The automated checks cover block metadata, native Blocks conversion, shared
+dependencies, and mechanics. Compiler checks use unmodified Arcade libraries. The add-on
 audit checks original upstream source revisions, not the site's adapted copies.
 Compile success does not guarantee every combination of renderers or controllers
 works at runtime. Hardware builds are not validated.

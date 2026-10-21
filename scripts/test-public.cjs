@@ -21,7 +21,7 @@ async function main() {
     fs.writeFileSync(targetPath, JSON.stringify(target));
     console.log('Public Arcade target:', JSON.stringify(target.versions));
     console.log('Source:', match[0]);
-    const run = spawnSync(process.execPath, ['--test', 'tests/compiler.test.cjs', 'tests/catalog.test.cjs', 'tests/platform-tools.test.cjs'], {
+    const run = spawnSync(process.execPath, ['--test', 'tests/compiler.test.cjs', 'tests/catalog.test.cjs', 'tests/platform-tools.test.cjs', 'tests/super-pack.test.cjs'], {
         cwd: path.resolve(__dirname, '..'), stdio: 'inherit',
         env: { ...process.env, ARCADE_TARGET_JSON: targetPath }
     });
